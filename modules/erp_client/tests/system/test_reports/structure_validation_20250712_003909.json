@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-07-12T00:39:09.091941",
+  "app_root": "/mnt/c/Users/kingc/OptimPV",
+  "total_checks": 30,
+  "success_count": 23,
+  "warning_count": 2,
+  "error_count": 5,
+  "success_checks": [
+    "✅ Fichier trouvé: app.py (Application principale Streamlit)",
+    "✅ Fichier trouvé: modules/__init__.py (Module principal)",
+    "✅ Fichier trouvé: modules/config.py (Configuration)",
+    "✅ Fichier trouvé: modules/data_import.py (Import de données)",
+    "✅ Fichier trouvé: modules/storage.py (Stockage)",
+    "✅ Fichier trouvé: modules/visualization/__init__.py (Visualisation)",
+    "✅ Fichier trouvé: modules/erp_client/__init__.py (Module ERP)",
+    "✅ Fichier trouvé: modules/erp_client/ui/main_interface.py (Interface ERP principale)",
+    "✅ Fichier trouvé: modules/erp_client/models/__init__.py (Modèles de données)",
+    "✅ Fichier trouvé: modules/erp_client/models/client.py (Modèle Client)",
+    "✅ Fichier trouvé: modules/erp_client/models/pricing.py (Modèle Prix)",
+    "✅ Fichier trouvé: modules/erp_client/services/__init__.py (Services)",
+    "✅ Fichier trouvé: modules/erp_client/services/client_service.py (Service Client)",
+    "✅ Fichier trouvé: modules/erp_client/services/pricing_service.py (Service Prix)",
+    "✅ Fichier trouvé: modules/erp_client/database/erp_database.py (Base de données ERP)",
+    "✅ Fichier trouvé: modules/erp_client/ui/client_form.py (Formulaire client)",
+    "✅ Fichier trouvé: modules/erp_client/ui/client_list.py (Liste clients)",
+    "✅ Fichier trouvé: modules/erp_client/ui/pricing_dashboard.py (Dashboard prix)",
+    "✅ Fichier trouvé: modules/erp_client/ui/commercial_dashboard.py (Dashboard commercial)",
+    "✅ Pages détectées: 13",
+    "✅ Onglets ERP détectés: 10",
+    "✅ Dépendance critique: sqlite3 (Base de données (builtin))",
+    "✅ Dépendance optionnelle: requests (Requêtes HTTP)"
+  ],
+  "warnings": [
+    "⚠️ Dépendance optionnelle manquante: folium (Cartes interactives)",
+    "⚠️ Dépendance optionnelle manquante: openpyxl (Fichiers Excel)"
+  ],
+  "errors": [
+    "❌ Fichier manquant: modules/reporting.py (Rapports)",
+    "❌ Streamlit non installé ou non importable",
+    "❌ Dépendance critique manquante: streamlit (Interface utilisateur)",
+    "❌ Dépendance critique manquante: pandas (Manipulation de données)",
+    "❌ Dépendance critique manquante: plotly (Graphiques interactifs)"
+  ],
+  "overall_status": "FAILED"
+}

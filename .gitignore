@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyArmor
+.pyarmor/
+pyarmor-regcode-*.txt
+pyarmor-regfile-*.zip
+temp_protected/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs
+*.log
+logs/
+optimpv_launcher.log
+
+# Streamlit
+.streamlit/cache/
+.streamlit/secrets.toml
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+temp_build/
+nul
+*.tmp
+*.temp
+
+# Project specific
+projects/*.backup
+saved_configs/*.backup
+data/*.backup
+evaluation_facturation_results.json
+
+# Archives (optionnel - décommentez si vous ne voulez pas versionner les archives)
+# Archives/
+
+# Gros fichiers de données géographiques
+modules/prospect_mapping/data/BDTOPO*/
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+
+# Sensitive files
+config/secrets.py
+*.key
+*.pem
+create_token_admin.py

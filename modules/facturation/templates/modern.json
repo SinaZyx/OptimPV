@@ -1,0 +1,127 @@
+{
+  "name": "modern",
+  "description": "Modern OptimPV template with clean design and corporate colors",
+  "colors": {
+    "primary": "#2E7D32",
+    "secondary": "#666666",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "table_header": "#E8F5E8",
+    "table_alt": "#F9F9F9",
+    "border": "#DDDDDD",
+    "accent": "#4CAF50"
+  },
+  "fonts": {
+    "title": {
+      "name": "Helvetica-Bold",
+      "size": 20
+    },
+    "heading": {
+      "name": "Helvetica-Bold",
+      "size": 14
+    },
+    "body": {
+      "name": "Helvetica",
+      "size": 10
+    },
+    "footer": {
+      "name": "Helvetica",
+      "size": 9
+    }
+  },
+  "margins": {
+    "top": 20,
+    "bottom": 20,
+    "left": 20,
+    "right": 20
+  },
+  "logo_path": "",
+  "logo_width": 30,
+  "logo_height": 15,
+  "table_style": {
+    "header_height": 12,
+    "row_height": 8,
+    "border_width": 1,
+    "grid_color": "#DDDDDD"
+  },
+  "texts": {
+    "fr": {
+      "invoice_title": "FACTURE",
+      "credit_note_title": "AVOIR",
+      "quote_title": "DEVIS",
+      "invoice_number": "Facture N°",
+      "credit_note_number": "Avoir N°",
+      "quote_number": "Devis N°",
+      "issue_date": "Date d'émission",
+      "due_date": "Date d'échéance",
+      "quote_date": "Date du devis",
+      "valid_until": "Valable jusqu'au",
+      "project": "Projet",
+      "bill_to": "Facturé à",
+      "quote_for": "Devis pour",
+      "description": "Description",
+      "quantity": "Quantité",
+      "unit_price": "Prix unitaire",
+      "total": "Total",
+      "subtotal": "Sous-total HT",
+      "vat": "TVA",
+      "total": "Total TTC",
+      "qr_payment": "Paiement par QR Code",
+      "qr_payment_desc": "Scannez avec votre app bancaire",
+      "payment_terms": "Conditions de paiement",
+      "days_net": "jours net",
+      "payment_method": "Mode de paiement",
+      "bank_transfer": "Virement bancaire",
+      "late_payment_penalty": "En cas de retard de paiement, des pénalités de 3 fois le taux d'intérêt légal seront appliquées.",
+      "thank_you": "Merci de votre confiance !",
+      "quote_conditions_title": "Conditions générales",
+      "quote_condition_1": "Devis valable 30 jours à compter de la date d'émission",
+      "quote_condition_2": "Prix fermes et définitifs, non révisables",
+      "quote_condition_3": "Règlement à 30 jours fin de mois",
+      "quote_condition_4": "Installation conforme aux normes en vigueur",
+      "watermark_draft": "BROUILLON",
+      "watermark_paid": "PAYÉ",
+      "watermark_cancelled": "ANNULÉ",
+      "watermark_overdue": "IMPAYÉ"
+    },
+    "en": {
+      "invoice_title": "INVOICE",
+      "credit_note_title": "CREDIT NOTE",
+      "quote_title": "QUOTE",
+      "invoice_number": "Invoice No.",
+      "credit_note_number": "Credit Note No.",
+      "quote_number": "Quote No.",
+      "issue_date": "Issue Date",
+      "due_date": "Due Date",
+      "quote_date": "Quote Date",
+      "valid_until": "Valid Until",
+      "project": "Project",
+      "bill_to": "Bill To",
+      "quote_for": "Quote For",
+      "description": "Description",
+      "quantity": "Quantity",
+      "unit_price": "Unit Price",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "vat": "VAT",
+      "total": "Total",
+      "qr_payment": "QR Code Payment",
+      "qr_payment_desc": "Scan with your banking app",
+      "payment_terms": "Payment Terms",
+      "days_net": "days net",
+      "payment_method": "Payment Method",
+      "bank_transfer": "Bank Transfer",
+      "late_payment_penalty": "Late payment penalties of 3 times the legal interest rate will apply.",
+      "thank_you": "Thank you for your trust!",
+      "quote_conditions_title": "General Conditions",
+      "quote_condition_1": "Quote valid for 30 days from issue date",
+      "quote_condition_2": "Fixed and final prices, non-revisable",
+      "quote_condition_3": "Payment within 30 days end of month",
+      "quote_condition_4": "Installation compliant with current standards",
+      "watermark_draft": "DRAFT",
+      "watermark_paid": "PAID",
+      "watermark_cancelled": "CANCELLED",
+      "watermark_overdue": "OVERDUE"
+    }
+  }
+}

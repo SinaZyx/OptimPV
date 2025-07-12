@@ -1,0 +1,92 @@
+# === INTERFACE UTILISATEUR ===
+streamlit>=1.28.0
+pywebview>=4.4.0
+
+# === COMPILATION ET PACKAGING ===
+nuitka>=1.8.0
+ordered-set>=4.1.0
+cx_Freeze>=6.15.0
+pyinstaller>=5.13.0
+
+# === CALCUL ET DONNÉES ===
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+openpyxl>=3.1.0
+
+# === VISUALISATION ===
+plotly>=5.15.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# === GÉOGRAPHIE ET MÉTÉO ===
+requests>=2.31.0
+urllib3>=2.0.0
+geopandas>=0.14.0
+folium>=0.15.0
+shapely>=2.0.0
+fiona>=1.9.0
+pyproj>=3.6.0
+tqdm>=4.66.0
+
+# === INTERFACE SYSTÈME ===
+psutil>=5.9.0
+pystray>=0.19.0
+Pillow>=10.0.0
+
+# === UTILITAIRES ===
+python-dateutil>=2.8.0
+pytz>=2023.3
+pathlib2>=2.3.0
+
+# === RÉSEAU ET SÉCURITÉ ===
+# Pour l'interface d'administration
+hashlib3>=0.0.1  # Optionnel, hashlib est built-in
+socket>=3.11.0  # Built-in
+json5>=0.9.0
+cryptography>=41.0.0
+
+# === DÉVELOPPEMENT ===
+# (pour le développement uniquement)
+pytest>=7.4.0
+black>=23.7.0
+flake8>=6.0.0
+
+# === COMPRESSION ===
+# UPX (installé séparément)
+# https://upx.github.io/
+
+# === SYSTÈME PACKAGING ===
+setuptools>=68.0.0
+wheel>=0.41.0
+pip>=23.2.0
+
+# === LOGGING AVANCÉ ===
+colorlog>=6.7.0
+loguru>=0.7.0
+
+# === CONFIGURATION ===
+pyyaml>=6.0.0
+configparser>=5.3.0
+toml>=0.10.0
+
+# === INTERFACE WEB AVANCÉE ===
+fastapi>=0.103.0  # Alternative future à Streamlit
+uvicorn>=0.23.0   # Serveur ASGI
+
+# === NOTES D'INSTALLATION ===
+# 
+# Installation rapide :
+# pip install -r requirements.txt
+#
+# Pour l'environnement de build :
+# python -m venv venv
+# venv\Scripts\activate
+# pip install --upgrade pip
+# pip install -r requirements.txt
+#
+# Vérification des dépendances :
+# pip check
+#
+# Mise à jour :
+# pip install --upgrade -r requirements.txt 

@@ -1,0 +1,41 @@
+
+{
+  "Revenus_Total": {
+    "display_name": "Revenus Totaux (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Revenus (Surplus + Valorisation Autoconso)", "is_additive": true },
+  "OPEX": {
+    "display_name": "OPEX (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Charges d'exploitation", "is_additive": true },
+  "TURPE": {
+    "display_name": "TURPE (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Coût accès réseau producteur", "is_additive": true },
+  "EBITDA": {
+    "display_name": "EBITDA (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Résultat avant Intérêts, Impôts, Amort.", "is_additive": false },
+  "Amortissement": {
+    "display_name": "Amortissement (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Charge comptable (perte valeur invest.)", "is_additive": true },
+  "EBIT": {
+    "display_name": "EBIT (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Résultat d'exploitation (EBITDA - Amort.)", "is_additive": false },
+   "Impots_Provisionnes": {
+    "display_name": "Impôts Prov. (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Provision mensuelle pour impôt N-1", "is_additive": true },
+   "OCF_Projet": {
+    "display_name": "OCF Projet (€)", "group": "1. FLUX OPÉRATIONNEL PROJET", "unit": "€", "decimals": 0, "tooltip": "Flux Trésorerie Opérationnel Projet (EBIT(1-T)+Amort.)", "is_additive": false },
+  "Interets_Payes": {
+    "display_name": "Intérêts Payés (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Intérêts sur la dette", "is_additive": true },
+  "EBT": {
+    "display_name": "EBT (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Résultat avant impôts (EBIT - Intérêts)", "is_additive": false },
+  "Resultat_Net": {
+    "display_name": "Résultat Net (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Résultat après impôts (EBT - Impôts)", "is_additive": false },
+  "Service_Dette": {
+    "display_name": "Service Dette (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Total remboursement dette (Principal + Intérêts)", "is_additive": true },
+  "Principal_Rembourse": {
+    "display_name": "Principal Remb. (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Partie Principal du remboursement", "is_additive": true },
+  "FCFE": {
+    "display_name": "Free Cash Flow Equity (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Flux Trésorerie Actionnaires (RN+Amort-Princ.Remb.)", "is_additive": false },
+  "Solde_Dette_Fin_Mois": {
+    "display_name": "Solde Dette Fin (€)", "group": "2. FINANCEMENT & FLUX EQUITY", "unit": "€", "decimals": 0, "tooltip": "Capital restant dû fin de mois", "is_additive": false },
+  "Production_kWh": {
+    "display_name": "Production (kWh)", "group": "3. INDICATEURS ÉNERGIE & RATIOS", "unit": "kWh", "decimals": 0, "tooltip": "Énergie totale produite", "is_additive": true },
+  "Consommation_kWh": {
+    "display_name": "Consommation (kWh)", "group": "3. INDICATEURS ÉNERGIE & RATIOS", "unit": "kWh", "decimals": 0, "tooltip": "Énergie totale consommée", "is_additive": true },
+  "Autoconsommation_kWh": {
+    "display_name": "Autoconso. (kWh)", "group": "3. INDICATEURS ÉNERGIE & RATIOS", "unit": "kWh", "decimals": 0, "tooltip": "Énergie produite et auto-consommée", "is_additive": true },
+  "Surplus_kWh": {
+    "display_name": "Surplus (kWh)", "group": "3. INDICATEURS ÉNERGIE & RATIOS", "unit": "kWh", "decimals": 0, "tooltip": "Énergie produite et injectée", "is_additive": true }
+}

@@ -1,0 +1,288 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Schéma de validation des règles de répartition",
+  "description": "Définit la structure et les contraintes pour les règles de répartition dynamique",
+  "type": "object",
+  "definitions": {
+    "repartitionKey": {
+      "type": "object",
+      "required": ["site_id", "participant_name", "value", "key_type"],
+      "properties": {
+        "site_id": {
+          "type": "string",
+          "description": "Identifiant unique du site"
+        },
+        "participant_name": {
+          "type": "string",
+          "description": "Nom du participant"
+        },
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pourcentage d'allocation (0-100)"
+        },
+        "key_type": {
+          "type": "string",
+          "enum": ["static", "dynamic", "rule_based"],
+          "description": "Type de clé de répartition"
+        },
+        "period_start": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "Date de début de validité"
+        },
+        "period_end": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "Date de fin de validité"
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Métadonnées additionnelles"
+        }
+      }
+    },
+    "repartitionPeriod": {
+      "type": "object",
+      "required": ["period_id", "period_type", "period_name", "keys"],
+      "properties": {
+        "period_id": {
+          "type": "string",
+          "description": "Identifiant unique de la période"
+        },
+        "period_type": {
+          "type": "string",
+          "enum": ["monthly", "quarterly", "yearly", "custom"],
+          "description": "Type de période"
+        },
+        "period_name": {
+          "type": "string",
+          "description": "Nom descriptif de la période"
+        },
+        "keys": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/repartitionKey" },
+          "description": "Liste des clés pour cette période"
+        },
+        "start_date": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "Date de début de la période"
+        },
+        "end_date": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "Date de fin de la période"
+        }
+      }
+    },
+    "repartitionCondition": {
+      "type": "object",
+      "required": ["field", "operator", "value"],
+      "properties": {
+        "field": {
+          "type": "string",
+          "description": "Champ à évaluer (ex: consumption, time_of_day)"
+        },
+        "operator": {
+          "type": "string",
+          "enum": ["<", "<=", ">", ">=", "==", "!=", "in", "not_in"],
+          "description": "Opérateur de comparaison"
+        },
+        "value": {
+          "description": "Valeur de comparaison"
+        }
+      }
+    },
+    "repartitionRule": {
+      "type": "object",
+      "required": ["rule_id", "rule_name", "rule_type"],
+      "properties": {
+        "rule_id": {
+          "type": "string",
+          "description": "Identifiant unique de la règle"
+        },
+        "rule_name": {
+          "type": "string",
+          "description": "Nom descriptif de la règle"
+        },
+        "rule_type": {
+          "type": "string",
+          "enum": ["priority", "threshold", "time_based", "consumption_based", "production_based"],
+          "description": "Type de règle"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000,
+          "default": 0,
+          "description": "Priorité de la règle (plus élevé = plus prioritaire)"
+        },
+        "parameters": {
+          "type": "object",
+          "description": "Paramètres spécifiques au type de règle",
+          "properties": {
+            "priority_order": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Ordre de priorité des sites (pour règles priority)"
+            },
+            "min_threshold": {
+              "type": "object",
+              "additionalProperties": { "type": "number", "minimum": 0 },
+              "description": "Seuils minimums par site (pour règles threshold)"
+            },
+            "max_threshold": {
+              "type": "object",
+              "additionalProperties": { "type": "number", "minimum": 0 },
+              "description": "Seuils maximums par site (pour règles threshold)"
+            },
+            "time_allocations": {
+              "type": "object",
+              "description": "Allocations par plage horaire (pour règles time_based)",
+              "additionalProperties": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            },
+            "default_allocation": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "description": "Allocation par défaut"
+            }
+          }
+        },
+        "conditions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/repartitionCondition" },
+          "description": "Conditions d'application de la règle"
+        },
+        "target_sites": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Sites concernés par la règle"
+        },
+        "enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Règle active ou non"
+        }
+      }
+    },
+    "repartitionTemplate": {
+      "type": "object",
+      "required": ["template_id", "template_name", "description", "template_type"],
+      "properties": {
+        "template_id": {
+          "type": "string",
+          "description": "Identifiant unique du template"
+        },
+        "template_name": {
+          "type": "string",
+          "description": "Nom du template"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description du template"
+        },
+        "template_type": {
+          "type": "string",
+          "enum": ["equitable", "consumption_based", "priority", "custom"],
+          "description": "Type de template"
+        },
+        "keys_pattern": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "description": "Pattern de clés pour template custom"
+        },
+        "rules": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/repartitionRule" },
+          "description": "Règles associées au template"
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "icon": { "type": "string" },
+            "recommended_for": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "created_date": { "type": "string", "format": "date-time" }
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+$",
+      "description": "Version du schéma"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["static", "temporal", "rules"],
+      "description": "Mode de répartition actif"
+    },
+    "current_keys": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/repartitionKey" },
+      "description": "Clés de répartition actuelles"
+    },
+    "temporal_keys": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/repartitionPeriod" },
+      "description": "Périodes temporelles configurées"
+    },
+    "rules": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/repartitionRule" },
+      "description": "Règles de répartition dynamique"
+    },
+    "templates": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/repartitionTemplate" },
+      "description": "Templates disponibles"
+    },
+    "optimization_settings": {
+      "type": "object",
+      "properties": {
+        "objective": {
+          "type": "string",
+          "enum": ["maximize_self_consumption", "minimize_penalties", "balance_savings"],
+          "description": "Objectif d'optimisation"
+        },
+        "constraints": {
+          "type": "object",
+          "description": "Contraintes d'optimisation"
+        }
+      }
+    },
+    "validation_status": {
+      "type": "object",
+      "properties": {
+        "valid": { "type": "boolean" },
+        "messages": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["version", "mode"],
+  "additionalProperties": false
+}

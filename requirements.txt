@@ -1,0 +1,37 @@
+# OptimPV - Dépendances de l'application
+
+# Interface utilisateur
+streamlit>=1.28.0
+
+# Gestion des données
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.25.0
+
+# Cartographie et visualisation
+pydeck>=0.8.0
+folium>=0.14.0
+
+# Sécurité et authentification
+bcrypt>=4.0.0
+hashlib2
+
+# Système et fichiers
+pathlib
+json5
+
+# Nouvelles dépendances pour l'analyse cadastrale
+pyproj>=3.0.0  # Pour les transformations de coordonnées
+shapely>=1.8.0  # Pour les calculs géométriques
+
+# Nouvelles dépendances pour le simulateur solaire
+asyncio  # Appels API asynchrones (inclus Python 3.7+)
+aiohttp>=3.8.0  # Client HTTP asynchrone
+
+# Logging et debug
+logging
+
+# Cache et performance
+functools
+typing_extensions>=4.0.0
+geopy>=2.0.0  # Pour calcul proximité Mougins

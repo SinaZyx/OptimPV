@@ -1,0 +1,14 @@
+# Dépendances pour le système DOCX OptimPV
+# ========================================
+
+# Dépendance principale pour la génération de documents DOCX
+python-docx>=0.8.11
+
+# Dépendances optionnelles pour les graphiques
+plotly>=5.0.0
+pillow>=9.0.0
+
+# Dépendances déjà présentes dans OptimPV (pour référence)
+# streamlit>=1.0.0
+# pandas>=1.3.0
+# numpy>=1.21.0

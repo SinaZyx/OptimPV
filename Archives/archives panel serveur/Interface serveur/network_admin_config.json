@@ -1,0 +1,22 @@
+{
+  "network": {
+    "ip": "127.0.0.1",
+    "port": 8504,
+    "allowed_ips": [
+      "127.0.0.1",
+      "localhost"
+    ],
+    "external_access": false,
+    "custom_domain": ""
+  },
+  "admin": {
+    "password_hash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+    "username": "admin",
+    "last_login": "2025-05-26T16:09:27.348179",
+    "session_timeout": 3600
+  },
+  "logs": {
+    "enable_network_logs": true,
+    "log_admin_access": true
+  }
+}

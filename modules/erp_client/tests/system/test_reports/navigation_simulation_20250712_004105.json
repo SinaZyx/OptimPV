@@ -1,0 +1,113 @@
+{
+  "timestamp": "2025-07-12T00:41:03.701558",
+  "duration": 1.907852,
+  "test_results": {
+    "config_module": false,
+    "data_import_module": false,
+    "storage_module": false,
+    "erp_module": false,
+    "erp_services": false,
+    "erp_ui_components": false,
+    "visualization_module": false,
+    "prospect_mapping": false,
+    "facturation_module": false
+  },
+  "errors": [
+    {
+      "component": "ConfigModule",
+      "error": "Erreur lors du test: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 167, in test_config_module\n    from modules.config import ConfigModule\n  File \"/mnt/c/Users/kingc/OptimPV/modules/config.py\", line 2, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:03.726139"
+    },
+    {
+      "component": "DataImportModule",
+      "error": "Erreur lors du test: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 191, in test_data_import_module\n    from modules.data_import import DataImportModule\n  File \"/mnt/c/Users/kingc/OptimPV/modules/data_import.py\", line 2, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:03.739211"
+    },
+    {
+      "component": "StorageModule",
+      "error": "Erreur lors du test: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 215, in test_storage_module\n    from modules.storage import StorageModule\n  File \"/mnt/c/Users/kingc/OptimPV/modules/storage/__init__.py\", line 18, in <module>\n    from .core import StorageModule\n  File \"/mnt/c/Users/kingc/OptimPV/modules/storage/core.py\", line 10, in <module>\n    from .project_manager import ProjectManager\n  File \"/mnt/c/Users/kingc/OptimPV/modules/storage/project_manager.py\", line 6, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:03.780286"
+    },
+    {
+      "component": "ERPModule",
+      "error": "Erreur lors du test: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 239, in test_erp_module\n    from modules.erp_client import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:03.837706"
+    },
+    {
+      "component": "ClientService",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 268, in test_erp_services\n    from modules.erp_client.services.client_service import ClientService\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:03.877293"
+    },
+    {
+      "component": "PricingService",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 288, in test_erp_services\n    from modules.erp_client.services.pricing_service import PricingService\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:03.915773"
+    },
+    {
+      "component": "CapacityService",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 303, in test_erp_services\n    from modules.erp_client.services.capacity_service import CapacityService\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.352317"
+    },
+    {
+      "component": "UI-render_client_form",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 335, in test_erp_ui_components\n    module = __import__(module_name, fromlist=[function_name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.386684"
+    },
+    {
+      "component": "UI-render_client_list",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 335, in test_erp_ui_components\n    module = __import__(module_name, fromlist=[function_name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.421159"
+    },
+    {
+      "component": "UI-render_pricing_dashboard",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 335, in test_erp_ui_components\n    module = __import__(module_name, fromlist=[function_name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.452534"
+    },
+    {
+      "component": "UI-render_commercial_dashboard",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 335, in test_erp_ui_components\n    module = __import__(module_name, fromlist=[function_name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.484347"
+    },
+    {
+      "component": "UI-render_autoconso_dashboard",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 335, in test_erp_ui_components\n    module = __import__(module_name, fromlist=[function_name])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/__init__.py\", line 15, in <module>\n    from .ui.main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/__init__.py\", line 3, in <module>\n    from .main_interface import render_erp_module\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/ui/main_interface.py\", line 8, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.517841"
+    },
+    {
+      "component": "VisualizationModule",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 385, in test_visualization_module\n    from modules.visualization import ModernVisualizationUI, MODERN_UI_AVAILABLE\nImportError: cannot import name 'ModernVisualizationUI' from 'modules.visualization' (/mnt/c/Users/kingc/OptimPV/modules/visualization/__init__.py)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 400, in test_visualization_module\n    from modules.visualization.main_visualization_ui import VisualizationModule\n  File \"/mnt/c/Users/kingc/OptimPV/modules/visualization/main_visualization_ui.py\", line 3, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.560088"
+    },
+    {
+      "component": "ProspectMapping",
+      "error": "Erreur: 'NoneType' object is not callable",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 422, in test_prospect_mapping\n    show_prospect_map_ui()\nTypeError: 'NoneType' object is not callable\n",
+      "timestamp": "2025-07-12T00:41:05.581751"
+    },
+    {
+      "component": "FacturationModule",
+      "error": "Erreur: No module named 'pandas'",
+      "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/kingc/OptimPV/modules/erp_client/tests/system/test_navigation_simulation.py\", line 437, in test_facturation_module\n    from modules.facturation import show_facturation_page\n  File \"/mnt/c/Users/kingc/OptimPV/modules/facturation/__init__.py\", line 6, in <module>\n    from .main import show_facturation_page\n  File \"/mnt/c/Users/kingc/OptimPV/modules/facturation/main.py\", line 7, in <module>\n    import pandas as pd\nModuleNotFoundError: No module named 'pandas'\n",
+      "timestamp": "2025-07-12T00:41:05.609371"
+    }
+  ],
+  "warnings": [],
+  "successes": [],
+  "tested_functions": [],
+  "streamlit_components": 0,
+  "success_rate": 0.0,
+  "overall_status": "PARTIAL"
+}

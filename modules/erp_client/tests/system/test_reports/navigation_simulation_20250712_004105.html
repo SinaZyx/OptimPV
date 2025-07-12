@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Test Navigation Simulation - OptimPV</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px 10px 0 0; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 30px; }
+        .metric { background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; }
+        .success { border-left: 5px solid #27ae60; }
+        .warning { border-left: 5px solid #f39c12; }
+        .error { border-left: 5px solid #e74c3c; }
+        .section { padding: 30px; border-top: 1px solid #ecf0f1; }
+        pre { background: #f8f9fa; padding: 15px; border-radius: 5px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Rapport Navigation Simulation - OptimPV</h1>
+            <p>Test par simulation des modules sans interface graphique</p>
+            <p>Généré le: 2025-07-12 00:41:05</p>
+        </div>
+        
+        <div class="summary">
+            <div class="metric success">
+                <h3>0</h3>
+                <p>Tests Réussis</p>
+            </div>
+            <div class="metric warning">
+                <h3>0</h3>
+                <p>Avertissements</p>
+            </div>
+            <div class="metric error">
+                <h3>15</h3>
+                <p>Erreurs</p>
+            </div>
+            <div class="metric">
+                <h3>0.0%</h3>
+                <p>Taux de Succès</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Résultats par Module</h2>
+            <ul>
+                <li>❌ config_module: FAILED</li><li>❌ data_import_module: FAILED</li><li>❌ storage_module: FAILED</li><li>❌ erp_module: FAILED</li><li>❌ erp_services: FAILED</li><li>❌ erp_ui_components: FAILED</li><li>❌ visualization_module: FAILED</li><li>❌ prospect_mapping: FAILED</li><li>❌ facturation_module: FAILED</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>✅ Succès (0)</h2>
+            
+        </div>
+        
+        <div class="section">
+            <h2>❌ Erreurs (15)</h2>
+            <div class="error"><strong>ConfigModule:</strong> Erreur lors du test: No module named 'pandas'<br><small>2025-07-12T00:41:03.726139</small></div><div class="error"><strong>DataImportModule:</strong> Erreur lors du test: No module named 'pandas'<br><small>2025-07-12T00:41:03.739211</small></div><div class="error"><strong>StorageModule:</strong> Erreur lors du test: No module named 'pandas'<br><small>2025-07-12T00:41:03.780286</small></div><div class="error"><strong>ERPModule:</strong> Erreur lors du test: No module named 'pandas'<br><small>2025-07-12T00:41:03.837706</small></div><div class="error"><strong>ClientService:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:03.877293</small></div><div class="error"><strong>PricingService:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:03.915773</small></div><div class="error"><strong>CapacityService:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.352317</small></div><div class="error"><strong>UI-render_client_form:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.386684</small></div><div class="error"><strong>UI-render_client_list:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.421159</small></div><div class="error"><strong>UI-render_pricing_dashboard:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.452534</small></div><div class="error"><strong>UI-render_commercial_dashboard:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.484347</small></div><div class="error"><strong>UI-render_autoconso_dashboard:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.517841</small></div><div class="error"><strong>VisualizationModule:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.560088</small></div><div class="error"><strong>ProspectMapping:</strong> Erreur: 'NoneType' object is not callable<br><small>2025-07-12T00:41:05.581751</small></div><div class="error"><strong>FacturationModule:</strong> Erreur: No module named 'pandas'<br><small>2025-07-12T00:41:05.609371</small></div>
+        </div>
+        
+        <div class="section">
+            <h2>📋 Fonctions Testées</h2>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+        

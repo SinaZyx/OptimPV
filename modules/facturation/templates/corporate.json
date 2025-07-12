@@ -1,0 +1,127 @@
+{
+  "name": "corporate",
+  "description": "Formal corporate template with professional blue color scheme",
+  "colors": {
+    "primary": "#1B365D",
+    "secondary": "#4A6B8A",
+    "text": "#2C3E50",
+    "background": "#FFFFFF",
+    "table_header": "#EBF2F7",
+    "table_alt": "#F8F9FA",
+    "border": "#BDC3C7",
+    "accent": "#3498DB"
+  },
+  "fonts": {
+    "title": {
+      "name": "Helvetica-Bold",
+      "size": 22
+    },
+    "heading": {
+      "name": "Helvetica-Bold",
+      "size": 14
+    },
+    "body": {
+      "name": "Helvetica",
+      "size": 10
+    },
+    "footer": {
+      "name": "Helvetica",
+      "size": 9
+    }
+  },
+  "margins": {
+    "top": 25,
+    "bottom": 25,
+    "left": 25,
+    "right": 25
+  },
+  "logo_path": "",
+  "logo_width": 35,
+  "logo_height": 18,
+  "table_style": {
+    "header_height": 14,
+    "row_height": 10,
+    "border_width": 1,
+    "grid_color": "#BDC3C7"
+  },
+  "texts": {
+    "fr": {
+      "invoice_title": "FACTURE",
+      "credit_note_title": "AVOIR",
+      "quote_title": "DEVIS",
+      "invoice_number": "Facture N°",
+      "credit_note_number": "Avoir N°",
+      "quote_number": "Devis N°",
+      "issue_date": "Date d'émission",
+      "due_date": "Date d'échéance",
+      "quote_date": "Date du devis",
+      "valid_until": "Valable jusqu'au",
+      "project": "Projet",
+      "bill_to": "Facturé à",
+      "quote_for": "Devis pour",
+      "description": "Description des services",
+      "quantity": "Quantité",
+      "unit_price": "Prix unitaire (€)",
+      "total": "Montant total (€)",
+      "subtotal": "Sous-total HT",
+      "vat": "Taxe sur la valeur ajoutée",
+      "total": "Total toutes taxes comprises",
+      "qr_payment": "Paiement par QR Code",
+      "qr_payment_desc": "Scannez avec votre application bancaire",
+      "payment_terms": "Conditions de règlement",
+      "days_net": "jours nets",
+      "payment_method": "Modalités de paiement",
+      "bank_transfer": "Virement bancaire",
+      "late_payment_penalty": "Conformément à l'article L441-6 du Code de commerce, tout retard de paiement donnera lieu à l'application de pénalités égales à trois fois le taux d'intérêt légal en vigueur.",
+      "thank_you": "Nous vous remercions de votre confiance et restons à votre disposition.",
+      "quote_conditions_title": "Conditions générales de vente",
+      "quote_condition_1": "Le présent devis est valable pour une durée de 30 jours à compter de sa date d'établissement",
+      "quote_condition_2": "Les prix indiqués sont fermes et définitifs, exprimés en euros toutes taxes comprises",
+      "quote_condition_3": "Les conditions de règlement sont fixées à 30 jours fin de mois à compter de la date de facturation",
+      "quote_condition_4": "L'installation sera réalisée en conformité avec les normes et réglementations en vigueur",
+      "watermark_draft": "BROUILLON",
+      "watermark_paid": "PAYÉ",
+      "watermark_cancelled": "ANNULÉ",
+      "watermark_overdue": "IMPAYÉ"
+    },
+    "en": {
+      "invoice_title": "INVOICE",
+      "credit_note_title": "CREDIT NOTE",
+      "quote_title": "QUOTATION",
+      "invoice_number": "Invoice Number",
+      "credit_note_number": "Credit Note Number",
+      "quote_number": "Quotation Number",
+      "issue_date": "Issue Date",
+      "due_date": "Due Date",
+      "quote_date": "Quotation Date",
+      "valid_until": "Valid Until",
+      "project": "Project",
+      "bill_to": "Billed To",
+      "quote_for": "Quotation For",
+      "description": "Service Description",
+      "quantity": "Quantity",
+      "unit_price": "Unit Price (€)",
+      "total": "Total Amount (€)",
+      "subtotal": "Subtotal (excl. VAT)",
+      "vat": "Value Added Tax",
+      "total": "Total (incl. VAT)",
+      "qr_payment": "QR Code Payment",
+      "qr_payment_desc": "Scan with your banking application",
+      "payment_terms": "Payment Terms",
+      "days_net": "days net",
+      "payment_method": "Payment Method",
+      "bank_transfer": "Bank Transfer",
+      "late_payment_penalty": "In accordance with applicable regulations, late payment will incur penalties equal to three times the legal interest rate.",
+      "thank_you": "We thank you for your trust and remain at your disposal.",
+      "quote_conditions_title": "General Terms and Conditions",
+      "quote_condition_1": "This quotation is valid for a period of 30 days from its date of issue",
+      "quote_condition_2": "The prices indicated are firm and final, expressed in euros including all taxes",
+      "quote_condition_3": "Payment terms are set at 30 days end of month from the invoice date",
+      "quote_condition_4": "Installation will be carried out in compliance with current standards and regulations",
+      "watermark_draft": "DRAFT",
+      "watermark_paid": "PAID",
+      "watermark_cancelled": "CANCELLED",
+      "watermark_overdue": "OVERDUE"
+    }
+  }
+}

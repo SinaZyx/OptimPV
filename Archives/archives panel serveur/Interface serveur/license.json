@@ -1,0 +1,16 @@
+{
+  "authorized_macs": [
+    "00:FF:34:B6:46:E9",
+    "04:D4:C4:55:AD:45",
+    "0A:00:27:00:00:11",
+    "A8:6D:AA:B3:1D:11",
+    "A8:6D:AA:B3:1D:12",
+    "AA:6D:AA:B3:1D:11",
+    "A8:6D:AA:B3:1D:15"
+  ],
+  "authorized_systems": [
+    "04C1893BEF0E5F89"
+  ],
+  "created_date": "2025-05-24T16:01:37.403877",
+  "version": "1.0"
+}

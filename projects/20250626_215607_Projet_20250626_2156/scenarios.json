@@ -1,0 +1,37 @@
+{
+    "Base": {
+        "description": "Sc\u00e9nario de r\u00e9f\u00e9rence",
+        "production_modifier": 1.0,
+        "opex_modifier": 1.0,
+        "capex_modifier": 0.0,
+        "inflation_modifier": 1.0
+    },
+    "P90": {
+        "description": "Production r\u00e9duite de 5%",
+        "production_modifier": 0.95,
+        "opex_modifier": 1.0,
+        "capex_modifier": 1.0,
+        "inflation_modifier": 1.0
+    },
+    "OPEX +10%": {
+        "description": "Augmentation des co\u00fbts d'exploitation de 10%",
+        "production_modifier": 1.0,
+        "opex_modifier": 1.1,
+        "capex_modifier": 1.0,
+        "inflation_modifier": 1.0
+    },
+    "CAPEX +10%": {
+        "description": "Augmentation de l'investissement initial de 10%",
+        "production_modifier": 1.0,
+        "opex_modifier": 1.0,
+        "capex_modifier": 1.1,
+        "inflation_modifier": 1.0
+    },
+    "Inflation Modifi\u00e9e": {
+        "description": "Inflation \u00e0 1.5% au lieu de 2%",
+        "production_modifier": 1.0,
+        "opex_modifier": 1.0,
+        "capex_modifier": 1.0,
+        "inflation_modifier": 0.75
+    }
+}

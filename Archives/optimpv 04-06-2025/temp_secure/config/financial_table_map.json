@@ -1,0 +1,210 @@
+{
+    "Production_kWh": {
+        "display_name": "Production (kWh)",
+        "group": "1. PROJET : Volumes & Revenus",
+        "unit": "kWh",
+        "decimals": 0,
+        "tooltip": "Énergie totale produite par le système sur la période.",
+        "is_additive": true
+    },
+    "Consommation_kWh": {
+        "display_name": "Consommation (kWh)",
+        "group": "1. PROJET : Volumes & Revenus",
+        "unit": "kWh",
+        "decimals": 0,
+        "tooltip": "Énergie totale consommée par les participants sur la période.",
+        "is_additive": true
+    },
+    "Autoconsommation_kWh": {
+        "display_name": "Autoconso. (kWh)",
+        "group": "1. PROJET : Volumes & Revenus",
+        "unit": "kWh",
+        "decimals": 0,
+        "tooltip": "Partie de l'énergie produite qui est directement consommée localement.",
+        "is_additive": true
+    },
+    "Surplus_kWh": {
+        "display_name": "Surplus (kWh)",
+        "group": "1. PROJET : Volumes & Revenus",
+        "unit": "kWh",
+        "decimals": 0,
+        "tooltip": "Partie de l'énergie produite qui est injectée sur le réseau (non autoconsommée).",
+        "is_additive": true
+    },
+    "Revenus_Total": {
+        "display_name": "Revenus Totaux (€)",
+        "group": "1. PROJET : Volumes & Revenus",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Total des revenus générés (vente de surplus + valorisation de l'autoconsommation).",
+        "is_additive": true
+    },
+    "OPEX": {
+        "display_name": "OPEX (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Total des charges d'exploitation (maintenance, assurance, gestion, etc.).",
+        "is_additive": true
+    },
+    "TURPE": {
+        "display_name": "TURPE (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Tarif d'Utilisation des Réseaux Publics d'Électricité (part producteur).",
+        "is_additive": true
+    },
+    "EBITDA": {
+        "display_name": "EBITDA (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Bénéfice avant Intérêts, Impôts, Dépréciation et Amortissement (Revenus Totaux - OPEX - TURPE).",
+        "is_additive": true 
+    },
+    "Amortissement": {
+        "display_name": "Amortissement (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Charge comptable reflétant la perte de valeur de l'investissement initial.",
+        "is_additive": true
+    },
+    "EBIT": {
+        "display_name": "EBIT (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Résultat d'exploitation (EBITDA - Amortissement).",
+        "is_additive": false
+    },
+    "Tax_Payment": {
+        "display_name": "Acomptes IS (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Paiements d'acomptes d'impôt sur les sociétés pour l'année en cours.",
+        "is_additive": true
+    },
+    "Solde_IS_N_1_Paye_Mois": {
+        "display_name": "Solde IS N-1 (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Paiement du solde d'impôt sur les sociétés de l'année précédente.",
+        "is_additive": true
+    },
+    "Total_IS_Decaisse_Mois": {
+        "display_name": "Total IS Décaissé (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Somme des acomptes IS de l'année en cours et du solde IS de l'année précédente.",
+        "is_additive": true
+    },
+    "Impots_Provisionnes": {
+        "display_name": "Impôts Prov. (Compta) (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Charge d'impôt théorique calculée sur l'EBT mensuel (pour P&L comptable). Différent des paiements effectifs.",
+        "is_additive": true
+    },
+    "OCF_Projet": {
+        "display_name": "OCF Projet (€)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Flux de Trésorerie Opérationnel du Projet (EBITDA * (1 - Taux IS)) + (Amortissement * Taux IS). Nécessite IS annuel pour précision.",
+        "is_additive": false
+    },
+    "Marge_EBITDA": {
+        "display_name": "Marge EBITDA (%)",
+        "group": "2. PROJET : Coûts & Rentabilité Opérationnelle",
+        "unit": "%",
+        "decimals": 1,
+        "tooltip": "Ratio EBITDA / Revenus Totaux.",
+        "is_additive": false
+    },
+    "Service_Dette": {
+        "display_name": "Service Dette (€)",
+        "group": "3. PROJET : Service Dette & Ratios Associés",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Total des remboursements de la dette (Principal + Intérêts).",
+        "is_additive": true
+    },
+    "Principal_Rembourse": {
+        "display_name": "Principal Remb. (€)",
+        "group": "3. PROJET : Service Dette & Ratios Associés",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Partie du capital remboursé sur la dette.",
+        "is_additive": true
+    },
+    "Interets_Payes": {
+        "display_name": "Intérêts Payés (€)",
+        "group": "3. PROJET : Service Dette & Ratios Associés",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Montant des intérêts payés sur la dette.",
+        "is_additive": true
+    },
+    "DSCR": {
+        "display_name": "DSCR",
+        "group": "3. PROJET : Service Dette & Ratios Associés",
+        "unit": null,
+        "decimals": 2,
+        "tooltip": "Ratio de Couverture du Service de la Dette ((EBITDA - Paiement d'Impôt Effectif) / Service de la Dette).",
+        "is_additive": false
+    },
+    "Taux_Autoconso": {
+        "display_name": "Taux Autoconso (%)",
+        "group": "3. PROJET : Service Dette & Ratios Associés",
+        "unit": "%",
+        "decimals": 1,
+        "tooltip": "Ratio Autoconsommation (kWh) / Consommation Totale (kWh).",
+        "is_additive": false
+    },
+    "Taux_Autoprod": {
+        "display_name": "Taux Autoprod (%)",
+        "group": "3. PROJET : Service Dette & Ratios Associés",
+        "unit": "%",
+        "decimals": 1,
+        "tooltip": "Ratio Autoconsommation (kWh) / Production Totale (kWh).",
+        "is_additive": false
+    },
+    "EBT": {
+        "display_name": "EBT (€)",
+        "group": "4. FONDS PROPRES (Equity)",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Résultat avant impôts (EBIT - Intérêts Payés).",
+        "is_additive": false
+    },
+    "Resultat_Net": {
+        "display_name": "Résultat Net (€)",
+        "group": "4. FONDS PROPRES (Equity)",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Résultat après déduction des impôts effectifs (EBT - Paiement d'Impôt Effectif).",
+        "is_additive": false
+    },
+    "FCFE": {
+        "display_name": "Free Cash Flow Equity (€)",
+        "group": "4. FONDS PROPRES (Equity)",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Flux de Trésorerie disponible pour les Actionnaires (Résultat Net + Amortissement - Principal Remboursé).",
+        "is_additive": false
+    },
+    "Solde_Dette_Fin_Mois": {
+        "display_name": "Solde Dette Fin (€)",
+        "group": "4. FONDS PROPRES (Equity)",
+        "unit": "€",
+        "decimals": 0,
+        "tooltip": "Capital de la dette restant dû à la fin de la période.",
+        "is_additive": false
+    }
+  }

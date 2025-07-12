@@ -1,0 +1,11 @@
+{
+    "pythonVersion": "3.10",
+    "executionEnvironments": [
+        {
+            "root": ".",
+            "extraPaths": [
+                "Interface serveur/server_control/security"
+            ]
+        }
+    ]
+} 

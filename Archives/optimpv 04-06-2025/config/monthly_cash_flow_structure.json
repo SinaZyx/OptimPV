@@ -1,0 +1,166 @@
+[
+  {
+      "id": "cfo_header", "display_name": "I. Flux de Trésorerie d'Exploitation",
+      "type": "section_header", "style_class": "main-section-header" 
+  },
+  {
+      "id": "revenus_clients_encaisses", "display_name": "  Encaissements clients (Revenus HT)",
+      "type": "data", "source_column": "Revenus_Total", "sign": 1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  
+  {
+      "id": "opex_maintenance", 
+      "display_name": "  (-) OPEX - Maintenance (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Maintenance_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+  {
+      "id": "opex_assurance", 
+      "display_name": "  (-) OPEX - Assurance (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Assurance_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+  {
+      "id": "opex_admin", 
+      "display_name": "  (-) OPEX - Gestion Admin. (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Admin_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+  {
+      "id": "opex_onduleur", 
+      "display_name": "  (-) OPEX - Provision Onduleur (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Provision_Onduleur_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+
+  {
+      "id": "turpe_decaisse", "display_name": "  (-) TURPE (HT)",
+      "type": "data", "source_column": "TURPE", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "interets_payes", "display_name": "  (-) Intérêts sur Dette Payés",
+      "type": "data", "source_column": "Interets_Payes", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "impots_societes_payes", "display_name": "  (-) Impôts sur les Sociétés Payés",
+      "type": "data", "source_column": "Total_IS_Decaisse_Mois", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "vat_net_payment", "display_name": "  (-) Paiement Net de TVA (ou + si encaissement)",
+      "type": "data", "source_column": "VAT_Payment", "sign": -1.0, 
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "delta_bfr", "display_name": "  (-) Variation du Besoin en Fonds de Roulement", 
+      "type": "data", "source_column": "Delta_BFR_Mensuel", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "net_cfo", "display_name": "Flux Nets de Trésorerie d'Exploitation (I)",
+      "type": "subtotal",
+      "components": ["revenus_clients_encaisses", "opex_maintenance", "opex_assurance", "opex_admin", "opex_onduleur", "turpe_decaisse", "interets_payes", "impots_societes_payes", "vat_net_payment", "delta_bfr"],
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"}, 
+
+
+  {
+      "id": "cfi_header", "display_name": "II. Flux de Trésorerie d'Investissement",
+      "type": "section_header", "style_class": "main-section-header"
+  },
+  {
+      "id": "capex_brut_mensuel_decaisse",
+      "display_name": "  (-) Décaissements CAPEX (Bruts)",
+      "type": "data",
+      "source_column": "CAPEX_Initial_Mensuel",
+      "sign": -1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "prime_autoconso_encaissee_mensuelle",
+      "display_name": "  (+) Prime Autoconso. Reçue",
+      "type": "data",
+      "source_column": "Prime_Autoconso_Encaissee",
+      "sign": 1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "net_cfi", "display_name": "Flux Nets de Trésorerie d'Investissement (II)",
+      "type": "subtotal",
+      "components": ["capex_brut_mensuel_decaisse", "prime_autoconso_encaissee_mensuelle"],
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"},
+
+
+  {
+      "id": "cff_header", "display_name": "III. Flux de Trésorerie de Financement",
+      "type": "section_header", "style_class": "main-section-header"
+  },
+  {
+      "id": "apport_fonds_propres", "display_name": "  (+) Apport en Fonds Propres (Equity)",
+      "type": "data_results_first_month", "results_key": "net_equity_investment",
+      "sign": 1.0, "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "levee_dette", "display_name": "  (+) Levée de Dette",
+      "type": "data_results_first_month", "results_key": "debt_amount",
+      "sign": 1.0, "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "remb_principal_dette", "display_name": "  (-) Remboursement Principal Dette",
+      "type": "data", "source_column": "Principal_Rembourse",
+      "sign": -1.0, "style_class": "indent-1", "decimals": 0
+  },
+
+  {
+      "id": "net_cff", "display_name": "Flux Nets de Trésorerie de Financement (III)",
+      "type": "subtotal",
+      "components": ["apport_fonds_propres", "levee_dette", "remb_principal_dette"],
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"},
+
+
+  {
+      "id": "net_cash_variation", "display_name": "Variation Nette de Trésorerie (I+II+III)",
+      "type": "calculated_total", 
+      "calculation_logic": "sum_main_flux", 
+      "components": ["net_cfo", "net_cfi", "net_cff"],
+      "style_class": "main-total-row-style very-strong-border", "decimals": 0 
+  },
+  {"type": "visual_separator_strong"},
+
+  {
+      "id": "cash_reconciliation_header", "display_name": "V. Réconciliation de la Trésorerie",
+      "type": "section_header", "style_class": "main-section-header"
+  },
+  {
+      "id": "cash_opening_balance", "display_name": "  Solde de Trésorerie en Début de Mois",
+      "type": "calculated_balance_item", "calculation_logic": "opening_balance",
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "cash_closing_balance", "display_name": "Solde de Trésorerie en Fin de Mois",
+      "type": "calculated_balance_item", "calculation_logic": "closing_balance", 
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  }
+]

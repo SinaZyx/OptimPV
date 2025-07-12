@@ -1,0 +1,340 @@
+[
+  {
+      "id": "cfo_header", "display_name": "I. Flux de Trésorerie d'Exploitation",
+      "type": "section_header", "style_class": "main-section-header" 
+  },
+  {
+      "id": "revenus_clients_encaisses", "display_name": "  Encaissements clients (Revenus HT)",
+      "type": "data", "source_column": "Revenus_Total", "sign": 1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  
+  {
+      "id": "opex_maintenance", 
+      "display_name": "  (-) OPEX - Maintenance (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Maintenance_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+  {
+      "id": "opex_assurance", 
+      "display_name": "  (-) OPEX - Assurance (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Assurance_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+  {
+      "id": "opex_admin", 
+      "display_name": "  (-) OPEX - Gestion Admin. (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Admin_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+  {
+      "id": "opex_onduleur", 
+      "display_name": "  (-) OPEX - Provision Onduleur (HT)",
+      "type": "data", 
+      "source_column": "OPEX_Provision_Onduleur_Mensuel", 
+      "sign": -1.0,
+      "style_class": "indent-1", 
+      "decimals": 0
+  },
+
+  {
+      "id": "turpe_decaisse", "display_name": "  (-) TURPE (HT)",
+      "type": "data", "source_column": "TURPE", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "interets_payes", "display_name": "  (-) Intérêts sur Dette Payés",
+      "type": "data", "source_column": "Interets_Payes", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "impots_societes_payes", "display_name": "  (-) Impôts sur les Sociétés Payés",
+      "type": "data", "source_column": "Total_IS_Decaisse_Mois", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "vat_net_payment", "display_name": "  (-) Paiement Net de TVA (ou + si encaissement)",
+      "type": "data", "source_column": "VAT_Payment", "sign": -1.0, 
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "delta_bfr", "display_name": "  (-) Variation du Besoin en Fonds de Roulement", 
+      "type": "data", "source_column": "Delta_BFR_Mensuel", "sign": -1.0,
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "net_cfo", "display_name": "Flux Nets de Trésorerie d'Exploitation (I)",
+      "type": "subtotal",
+      "components": ["revenus_clients_encaisses", "opex_maintenance", "opex_assurance", "opex_admin", "opex_onduleur", "turpe_decaisse", "interets_payes", "impots_societes_payes", "vat_net_payment", "delta_bfr"],
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"}, 
+
+
+  {
+      "id": "cfi_header", "display_name": "II. Flux de Trésorerie d'Investissement",
+      "type": "section_header", "style_class": "main-section-header"
+  },
+  {
+      "id": "capex_brut_mensuel_decaisse",
+      "display_name": "  (-) Décaissements CAPEX (Bruts)",
+      "type": "data",
+      "source_column": "CAPEX_Initial_Mensuel",
+      "sign": -1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "prime_autoconso_encaissee_mensuelle",
+      "display_name": "  (+) Prime Autoconso. Reçue",
+      "type": "data",
+      "source_column": "Prime_Autoconso_Encaissee",
+      "sign": 1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "valeur_residuelle_brute_encaissee",
+      "display_name": "  (+) Valeur Résiduelle Brute (valeur de revente)",
+      "type": "data",
+      "source_column": "Valeur_Residuelle_Brute",
+      "sign": 1.0,
+      "style_class": "indent-1",
+      "decimals": 0,
+      "default_if_missing": 0.0
+  },
+  {
+      "id": "cout_demantelement_decaisse",
+      "display_name": "  (-) Coût de Démantèlement",
+      "type": "data",
+      "source_column": "Cout_Demantelement",
+      "sign": -1.0,
+      "style_class": "indent-1",
+      "decimals": 0,
+      "default_if_missing": 0.0
+  },
+  {
+      "id": "remplacement_onduleur_decaisse",
+      "display_name": "  (-) Remplacement Onduleur (libération fonds réserve)",
+      "type": "data",
+      "source_column": "Fonds_Reserve_Onduleur_Liberation",
+      "sign": -1.0,
+      "style_class": "indent-1",
+      "decimals": 0,
+      "default_if_missing": 0.0,
+      "tooltip": "Paiement du nouvel onduleur financé par la libération du fonds de réserve dédié"
+  },
+  {
+      "id": "net_cfi", "display_name": "Flux Nets d'Investissement (II)",
+      "type": "subtotal",
+      "components": ["capex_brut_mensuel_decaisse", "prime_autoconso_encaissee_mensuelle", "valeur_residuelle_brute_encaissee", "cout_demantelement_decaisse", "remplacement_onduleur_decaisse"],
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"},
+
+
+  {
+      "id": "cff_header", "display_name": "III. Flux de Trésorerie de Financement",
+      "type": "section_header", "style_class": "main-section-header"
+  },
+  {
+      "id": "apport_fonds_propres", "display_name": "  (+) Apport en Fonds Propres (Equity)",
+      "type": "data", "source_column": "Equity_Injected_This_Month",
+      "sign": 1.0, "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "levee_dette", "display_name": "  (+) Levée de Dette",
+      "type": "data", "source_column": "Debt_Drawn_This_Month",
+      "sign": 1.0, "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "remb_principal_dette", "display_name": "  (-) Remboursement Principal Dette",
+      "type": "data", "source_column": "Principal_Rembourse",
+      "sign": -1.0, "style_class": "indent-1", "decimals": 0
+  },
+
+  {
+      "id": "net_cff", "display_name": "Flux Nets de Financement (III)",
+      "type": "subtotal",
+      "components": ["apport_fonds_propres", "levee_dette", "remb_principal_dette"],
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"},
+
+
+  {
+      "id": "net_cash_variation", "display_name": "Variation Nette de Trésorerie (I+II+III)",
+      "type": "calculated_total", 
+      "calculation_logic": "sum_main_flux", 
+      "components": ["net_cfo", "net_cfi", "net_cff"],
+      "style_class": "main-total-row-style very-strong-border", "decimals": 0 
+  },
+  {"type": "visual_separator_strong"},
+
+  {
+      "id": "cash_reconciliation_header", "display_name": "V. Réconciliation de la Trésorerie",
+      "type": "section_header", "style_class": "main-section-header"
+  },
+  {
+      "id": "cash_opening_balance", "display_name": "  Solde de Trésorerie en Début de Mois",
+      "type": "calculated_balance_item", "calculation_logic": "opening_balance",
+      "style_class": "indent-1", "decimals": 0
+  },
+  {
+      "id": "cash_closing_balance", "display_name": "Solde de Trésorerie en Fin de Mois",
+      "type": "calculated_balance_item", "calculation_logic": "closing_balance", 
+      "style_class": "main-total-row-style strong-border", "decimals": 0
+  },
+  {"type": "visual_separator_strong"},
+
+  {
+      "id": "placement_header", 
+      "display_name": "VI. Détail des Placements et Fonds de Réserve",
+      "type": "section_header", 
+      "style_class": "main-section-header"
+  },
+  {
+      "id": "fonds_reserve_constitution_mois",
+      "display_name": "  (+) Constitution Fonds Réserve Onduleur",
+      "type": "data",
+      "source_column": "Fonds_Reserve_Onduleur_Constitutions",
+      "sign": 1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "fonds_reserve_interets_mois",
+      "display_name": "  (+) Intérêts Fonds Réserve Onduleur",
+      "type": "data",
+      "source_column": "Fonds_Reserve_Onduleur_Interets",
+      "sign": 1.0,
+      "style_class": "indent-1 italic",
+      "decimals": 0,
+      "tooltip": "Intérêts générés par le fonds de réserve onduleur (si placements actifs)"
+  },
+  {
+      "id": "placement_tva_mois",
+      "display_name": "  (+) Nouveau Placement Excédent TVA",
+      "type": "data",
+      "source_column": "Placement_Exces_TVA",
+      "sign": 1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "interets_capitalises_mois",
+      "display_name": "  (+) Intérêts Capitalisés du Mois",
+      "type": "data",
+      "source_column": "Interets_Placements_Mensuels",
+      "sign": 1.0,
+      "style_class": "indent-1 italic",
+      "decimals": 0,
+      "tooltip": "Intérêts générés et capitalisés (non encaissés - imposables au déblocage)"
+  },
+  {
+      "id": "liberation_fonds_reserve_positif",
+      "display_name": "  (+) Libération Fonds Réserve Onduleur",
+      "type": "data",
+      "source_column": "Fonds_Reserve_Onduleur_Liberation",
+      "sign": 1.0,
+      "style_class": "indent-1 bold",
+      "decimals": 0,
+      "tooltip": "Libération du fonds de réserve pour financer le remplacement onduleur"
+  },
+  {"type": "visual_separator_subtle"},
+  {
+      "id": "section_vi_header",
+      "display_name": "VI. Gestion de la Trésorerie et Placements",
+      "type": "section_header",
+      "style_class": "main-section-header"
+  },
+  {
+      "id": "tresorerie_totale_fin",
+      "display_name": "  Trésorerie totale fin de mois",
+      "type": "data",
+      "source_column": "Solde_Tresorerie_Fin_Mois",
+      "sign": 1.0,
+      "style_class": "indent-1",
+      "decimals": 0
+  },
+  {
+      "id": "reserve_minimum",
+      "display_name": "  (-) Réserve minimum obligatoire",
+      "type": "data",
+      "source_column": "Reserve_Minimum_Requise",
+      "sign": -1.0,
+      "style_class": "indent-1",
+      "decimals": 0,
+      "tooltip": "Coût onduleur indexé à l'inflation"
+  },
+  {
+      "id": "tresorerie_disponible_calc",
+      "display_name": "  (=) Trésorerie disponible",
+      "type": "calculated",
+      "calculation": "lambda row: row.get('Solde_Tresorerie_Fin_Mois', 0) - row.get('Reserve_Minimum_Requise', 0)",
+      "style_class": "subtotal-row-style indent-1",
+      "decimals": 0
+  },
+  {"type": "visual_separator_subtle"},
+  {
+      "id": "subsection_placements",
+      "display_name": "Détail des encours de placement",
+      "type": "subsection_header",
+      "style_class": "subsection-header"
+  },
+  {
+      "id": "fonds_reserve_onduleur_detail",
+      "display_name": "  • Fonds réserve onduleur",
+      "type": "data",
+      "source_column": "Fonds_Reserve_Onduleur_Total",
+      "sign": 1.0,
+      "style_class": "indent-2",
+      "decimals": 0
+  },
+  {
+      "id": "placements_tva_detail",
+      "display_name": "  • Placements TVA",
+      "type": "data",
+      "source_column": "Total_Placements_TVA",
+      "sign": 1.0,
+      "style_class": "indent-2",
+      "decimals": 0
+  },
+  {
+      "id": "placements_excedents_detail",
+      "display_name": "  • Placements excédents trésorerie",
+      "type": "data",
+      "source_column": "Solde_Placement_Excedents_Cumul",
+      "sign": 1.0,
+      "style_class": "indent-2",
+      "decimals": 0
+  },
+  {
+      "id": "total_placements_calc",
+      "display_name": "  Total des placements",
+      "type": "calculated",
+      "calculation": "lambda row: sum([row.get('Fonds_Reserve_Onduleur_Total', 0), row.get('Total_Placements_TVA', 0), row.get('Solde_Placement_Excedents_Cumul', 0)])",
+      "style_class": "subtotal-row-style indent-1 bold",
+      "decimals": 0
+  },
+  {"type": "visual_separator_subtle"},
+  {
+      "id": "ratio_securite",
+      "display_name": "  Ratio de sécurité",
+      "type": "calculated",
+      "calculation": "lambda row: (row.get('Solde_Tresorerie_Fin_Mois', 0) / row.get('Reserve_Minimum_Requise', 1)) if row.get('Reserve_Minimum_Requise', 0) > 0 else (999.99 if row.get('Solde_Tresorerie_Fin_Mois', 0) > 0 else 0)",
+      "style_class": "indent-1 italic",
+      "decimals": 2,
+      "format": "ratio",
+      "tooltip": "Trésorerie totale / Réserve minimum (> 1.5 = sûr)"
+  }
+]

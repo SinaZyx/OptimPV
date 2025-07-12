@@ -1,0 +1,137 @@
+{
+    "config": {
+        "nom_projet": "Projet Photovoltaïque ACOC",
+        "localisation": "France",
+        "date_debut_ppa": "2025-05-16",
+        "duree_ppa": 240,
+        "duree_construction": 3,
+        "amortissement_duree": 20,
+        "valeur_residuelle_pct": 0.0,
+        "cout_demantelement_pct": 0.0,
+        "degradation_rate": 0.005,
+        "taux_inflation": 2.0,
+        "taux_imposition": 25.0,
+        "tarif_edf_reference": 0.21,
+        "source_prix_autoconso": "prix_initial",
+        "tarif_oa_bracket_le9": 0.04,
+        "tarif_oa_bracket_le100": 0.0761,
+        "tarif_oa_bracket_gt100": 0.06,
+        "tarif_oa": 0.0761,
+        "tarif_oa_indexe_inflation": true,
+        "taux_inflation_tarif_oa": 1.89,
+        "subvention_rate_le3": 100.0,
+        "subvention_rate_le9": 80.0,
+        "subvention_rate_le36": 190.0,
+        "subvention_rate_le100": 100.0,
+        "subvention_rate_le500": 0.0,
+        "subvention_rate_gt100": 0.0,
+        "subvention_calculee": 9000.0,
+        "turpe_prod_tension": "BT>36kVA",
+        "turpe_prod_contrat": "Unique",
+        "turpe_prod_calculee": 574.8,
+        "turpe_indexe_inflation": true,
+        "cout_fonds_propres": 8.0,
+        "with_loan": true,
+        "debt_ratio": 1.0,
+        "taux_interet_dette": 4.0,
+        "debt_term_years": 20,
+        "target_dscr": 1.2,
+        "taux_interet_shl": 4.0,
+        "shl_blocage_period": 0,
+        "dividends_blocage_period": 0,
+        "opex_method": "auto",
+        "opex_percent": 1.5,
+        "opex_per_kwc": 20.0,
+        "opex_onduleur_provision": true,
+        "opex_onduleur_cost": 130.0,
+        "opex_onduleur_lifetime": 15,
+        "pvs_feed_in_tariff": 0.1108,
+        "pvs_avoided_cost_tariff": 0.2218,
+        "constraint_min_project_irr_pct": 8.0,
+        "constraint_max_payback": 18.0,
+        "constraint_min_consumer_gain_pct": 5.0,
+        "prix_min_revente": 0.05,
+        "prix_max_revente": 0.4,
+        "pas_optimisation": 0.001,
+        "nb_iterations_monte_carlo": 1000,
+        "ecart_type_production": 10.0,
+        "ecart_type_consommation": 5.0,
+        "constraint_min_irr_pct": 8.0
+    },
+    "sites_config": {
+        "ABA V2 -45K3.xlsx": {
+            "site_type": "Producteur",
+            "puissance_kwc": 45.0,
+            "capex": 65000.0,
+            "opex_maintenance": 433.0,
+            "opex_insurance": 90.0,
+            "opex_admin": 400.0,
+            "opex_onduleur_provision_site": true,
+            "opex_onduleur_total_cost_site": 9221.0,
+            "opex_onduleur_lifetime_site": 10
+        },
+        "ABA V2 -45K3 - Copie (2).xlsx": {
+            "site_type": "Consommateur Pur",
+            "puissance_kwc": 0.0,
+            "capex": 0.0,
+            "opex_maintenance": 0.0,
+            "opex_insurance": 0.0,
+            "opex_admin": 0.0,
+            "opex_onduleur_provision_site": false,
+            "opex_onduleur_total_cost_site": 0.0,
+            "opex_onduleur_lifetime_site": 0
+        },
+        "ABA V2 -45K3 - Copie (3).xlsx": {
+            "site_type": "Producteur",
+            "puissance_kwc": 45.0,
+            "capex": 45000.0,
+            "opex_maintenance": 420.0,
+            "opex_insurance": 100.0,
+            "opex_admin": 60.0,
+            "opex_onduleur_provision_site": true,
+            "opex_onduleur_total_cost_site": 9200.0,
+            "opex_onduleur_lifetime_site": 10
+        }
+    },
+    "scenarios": {
+        "Base": {
+            "description": "Scénario de référence",
+            "production_modifier": 1.0,
+            "opex_modifier": 1.0,
+            "capex_modifier": 0.0,
+            "inflation_modifier": 1.0
+        },
+        "P90": {
+            "description": "Production réduite de 5%",
+            "production_modifier": 0.95,
+            "opex_modifier": 1.0,
+            "capex_modifier": 1.0,
+            "inflation_modifier": 1.0
+        },
+        "OPEX +10%": {
+            "description": "Augmentation des coûts d'exploitation de 10%",
+            "production_modifier": 1.0,
+            "opex_modifier": 1.1,
+            "capex_modifier": 1.0,
+            "inflation_modifier": 1.0
+        },
+        "CAPEX +10%": {
+            "description": "Augmentation de l'investissement initial de 10%",
+            "production_modifier": 1.0,
+            "opex_modifier": 1.0,
+            "capex_modifier": 1.1,
+            "inflation_modifier": 1.0
+        },
+        "Inflation Modifiée": {
+            "description": "Inflation à 1.5% au lieu de 2%",
+            "production_modifier": 1.0,
+            "opex_modifier": 1.0,
+            "capex_modifier": 1.0,
+            "inflation_modifier": 0.75
+        }
+    },
+    "metadata": {
+        "date_creation": "2025-05-20T10:12:33.339843",
+        "nom": "Config_Projet_MultiSite_aba gestion 3 site "
+    }
+}

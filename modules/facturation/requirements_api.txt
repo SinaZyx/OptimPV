@@ -1,0 +1,122 @@
+# Dépendances pour l'API REST de facturation OptimPV
+
+# Framework FastAPI et serveur
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Validation des données
+pydantic>=2.5.0
+pydantic[email]>=2.5.0
+
+# Base de données et ORM
+sqlite3  # Inclus dans Python standard
+
+# Authentification et sécurité
+PyJWT>=2.8.0
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+
+# Client HTTP pour webhooks et intégrations
+httpx>=0.25.2
+requests>=2.31.0
+
+# Utilitaires de date et temps
+python-dateutil>=2.8.2
+
+# Export de données
+openpyxl>=3.1.2  # Export Excel
+xlsxwriter>=3.1.9  # Alternative pour Excel
+
+# Traitement JSON et XML
+xmltodict>=0.13.0
+
+# Logging avancé
+structlog>=23.2.0  # Logging structuré (optionnel)
+
+# Limitation de débit (pour middleware)
+slowapi>=0.1.9  # Alternative: limits>=3.7.0
+
+# Validation d'email avancée
+email-validator>=2.1.0
+
+# Utilitaires de développement et tests
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+pytest-mock>=3.12.0
+httpx-auth>=0.16.0  # Pour tester l'authentification
+
+# Formatage de code (développement)
+black>=23.11.0
+isort>=5.12.0
+flake8>=6.1.0
+
+# Documentation API
+python-markdown>=3.5.1
+
+# Monitoring et métriques (optionnel)
+prometheus-client>=0.19.0
+starlette-prometheus>=0.9.0
+
+# Configuration via variables d'environnement
+python-dotenv>=1.0.0
+
+# Crypto et hachage
+cryptography>=41.0.8
+
+# Intégrations ERP
+# Pour Odoo XML-RPC (inclus dans Python standard)
+# Pour Sage API REST (requests suffit)
+# Pour Cegid (requests suffit)
+
+# Formatage de dates
+babel>=2.13.1
+
+# Utilitaires système
+psutil>=5.9.6  # Monitoring système
+
+# Cache en mémoire (optionnel)
+cachetools>=5.3.2
+
+# Gestion des tâches asynchrones (optionnel)
+celery>=5.3.4  # Pour tâches en arrière-plan
+redis>=5.0.1   # Backend pour Celery
+
+# Validation de schémas JSON (optionnel)
+jsonschema>=4.20.0
+
+# Gestion des timezones
+pytz>=2023.3
+
+# Utilitaires de développement
+typing-extensions>=4.8.0
+
+# Documentation des erreurs
+sentry-sdk[fastapi]>=1.38.0  # Monitoring d'erreurs (optionnel)
+
+# Gestion des fichiers temporaires
+tempfile  # Inclus dans Python standard
+
+# Compression pour exports volumineux
+gzip  # Inclus dans Python standard
+
+# Génération d'UUID
+uuid  # Inclus dans Python standard
+
+# Expressions régulières avancées
+regex>=2023.10.3
+
+# Manipulation de chaînes
+furl>=2.1.3  # URLs
+phonenumbers>=8.13.26  # Validation numéros téléphone
+
+# Calculs financiers (pour extensions futures)
+numpy>=1.25.2  # Calculs numériques
+pandas>=2.1.3  # Manipulation de données (pour rapports)
+
+# Graphiques pour rapports (optionnel)
+matplotlib>=3.8.2
+plotly>=5.17.0
+
+# Sérialisation avancée
+msgpack>=1.0.7

@@ -1,0 +1,127 @@
+{
+  "name": "minimal",
+  "description": "Clean minimalist template with monochrome design",
+  "colors": {
+    "primary": "#000000",
+    "secondary": "#777777",
+    "text": "#333333",
+    "background": "#FFFFFF",
+    "table_header": "#F5F5F5",
+    "table_alt": "#FAFAFA",
+    "border": "#E0E0E0",
+    "accent": "#333333"
+  },
+  "fonts": {
+    "title": {
+      "name": "Helvetica-Bold",
+      "size": 18
+    },
+    "heading": {
+      "name": "Helvetica-Bold",
+      "size": 12
+    },
+    "body": {
+      "name": "Helvetica",
+      "size": 9
+    },
+    "footer": {
+      "name": "Helvetica",
+      "size": 8
+    }
+  },
+  "margins": {
+    "top": 25,
+    "bottom": 25,
+    "left": 25,
+    "right": 25
+  },
+  "logo_path": "",
+  "logo_width": 25,
+  "logo_height": 12,
+  "table_style": {
+    "header_height": 10,
+    "row_height": 6,
+    "border_width": 0.5,
+    "grid_color": "#E0E0E0"
+  },
+  "texts": {
+    "fr": {
+      "invoice_title": "FACTURE",
+      "credit_note_title": "AVOIR",
+      "quote_title": "DEVIS",
+      "invoice_number": "N°",
+      "credit_note_number": "Avoir N°",
+      "quote_number": "Devis N°",
+      "issue_date": "Date",
+      "due_date": "Échéance",
+      "quote_date": "Date",
+      "valid_until": "Valable jusqu'au",
+      "project": "Projet",
+      "bill_to": "Facturé à",
+      "quote_for": "Devis pour",
+      "description": "Description",
+      "quantity": "Qté",
+      "unit_price": "Prix unit.",
+      "total": "Total",
+      "subtotal": "Sous-total",
+      "vat": "TVA",
+      "total": "Total",
+      "qr_payment": "Paiement QR",
+      "qr_payment_desc": "Scanner pour payer",
+      "payment_terms": "Paiement",
+      "days_net": "jours",
+      "payment_method": "Mode",
+      "bank_transfer": "Virement",
+      "late_payment_penalty": "Pénalités de retard applicables selon la loi.",
+      "thank_you": "Merci.",
+      "quote_conditions_title": "Conditions",
+      "quote_condition_1": "Devis valable 30 jours",
+      "quote_condition_2": "Prix fermes",
+      "quote_condition_3": "Paiement 30 jours",
+      "quote_condition_4": "Normes en vigueur",
+      "watermark_draft": "BROUILLON",
+      "watermark_paid": "PAYÉ",
+      "watermark_cancelled": "ANNULÉ",
+      "watermark_overdue": "IMPAYÉ"
+    },
+    "en": {
+      "invoice_title": "INVOICE",
+      "credit_note_title": "CREDIT NOTE",
+      "quote_title": "QUOTE",
+      "invoice_number": "No.",
+      "credit_note_number": "Credit Note No.",
+      "quote_number": "Quote No.",
+      "issue_date": "Date",
+      "due_date": "Due",
+      "quote_date": "Date",
+      "valid_until": "Valid Until",
+      "project": "Project",
+      "bill_to": "Bill To",
+      "quote_for": "Quote For",
+      "description": "Description",
+      "quantity": "Qty",
+      "unit_price": "Unit Price",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "vat": "VAT",
+      "total": "Total",
+      "qr_payment": "QR Payment",
+      "qr_payment_desc": "Scan to pay",
+      "payment_terms": "Payment",
+      "days_net": "days",
+      "payment_method": "Method",
+      "bank_transfer": "Transfer",
+      "late_payment_penalty": "Late payment penalties apply.",
+      "thank_you": "Thank you.",
+      "quote_conditions_title": "Conditions",
+      "quote_condition_1": "Quote valid for 30 days",
+      "quote_condition_2": "Fixed prices",
+      "quote_condition_3": "Payment 30 days",
+      "quote_condition_4": "Current standards",
+      "watermark_draft": "DRAFT",
+      "watermark_paid": "PAID",
+      "watermark_cancelled": "CANCELLED",
+      "watermark_overdue": "OVERDUE"
+    }
+  }
+}

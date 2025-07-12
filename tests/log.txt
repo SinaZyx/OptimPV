@@ -1,0 +1,236 @@
+[2025-07-12 00:16:23] INFO: === DÉBUT DE SESSION DE TESTS ===
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - === DÉBUT DE SESSION DE TESTS ===
+[2025-07-12 00:16:23] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:23] INFO: Pytest disponible: False
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - Pytest disponible: False
+[2025-07-12 00:16:23] INFO: ================================================================================
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ================================================================================
+[2025-07-12 00:16:23] INFO: OptimPV - Test Runner Professionnel
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - OptimPV - Test Runner Professionnel
+[2025-07-12 00:16:23] INFO: ================================================================================
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ================================================================================
+[2025-07-12 00:16:23] INFO: Date: 2025-07-12 00:16:23
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - Date: 2025-07-12 00:16:23
+[2025-07-12 00:16:23] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:23] INFO: Tests: /mnt/c/Users/kingc/OptimPV/tests
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - Tests: /mnt/c/Users/kingc/OptimPV/tests
+[2025-07-12 00:16:23] INFO: Pytest: ❌ Non disponible
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - Pytest: ❌ Non disponible
+[2025-07-12 00:16:23] INFO: ================================================================================
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ================================================================================
+[2025-07-12 00:16:23] INFO: 
+============================================================
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - 
+============================================================
+[2025-07-12 00:16:23] INFO: 🛠️ Exécution: UTILS
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - 🛠️ Exécution: UTILS
+[2025-07-12 00:16:23] INFO: ============================================================
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ============================================================
+[2025-07-12 00:16:23] INFO: 📁 Répertoire: /mnt/c/Users/kingc/OptimPV/tests/utils
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - 📁 Répertoire: /mnt/c/Users/kingc/OptimPV/tests/utils
+[2025-07-12 00:16:23] INFO: ⏱️  Timeout: 180s
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ⏱️  Timeout: 180s
+[2025-07-12 00:16:23] OUTPUT: ⚠️  Pytest non disponible, exécution manuelle des tests...
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ⚠️  Pytest non disponible, exécution manuelle des tests...
+[2025-07-12 00:16:23] INFO: ⚠️  UTILS: Statut inconnu
+2025-07-12 00:16:23 - OptimPV_TestRunner - INFO - ⚠️  UTILS: Statut inconnu
+[2025-07-12 00:16:23] DEBUG: Résultat utils: {'status': 'NO_TESTS', 'tests_run': 0, 'passed': 0, 'failed': 0, 'time': 0.0030562877655029297}
+================================================================================
+RÉSUMÉ DE SESSION DE TESTS - 2025-07-12 00:16:23
+================================================================================
+Durée totale: 0.00 secondes
+Nombre de catégories testées: 1
+
+STATISTIQUES GLOBALES:
+  Tests exécutés: 0
+  Tests réussis: 0
+  Tests échoués: 0
+  Taux de réussite: 0.0%
+
+DÉTAILS PAR CATÉGORIE:
+  UTILS: NO_TESTS - 0/0 réussis (0.00s)
+
+================================================================================
+
+[2025-07-12 00:16:40] INFO: === DÉBUT DE SESSION DE TESTS ===
+[2025-07-12 00:16:40] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:40] INFO: Pytest disponible: False
+[2025-07-12 00:16:40] INFO: ================================================================================
+[2025-07-12 00:16:40] INFO: OptimPV - Test Runner Professionnel
+[2025-07-12 00:16:40] INFO: ================================================================================
+[2025-07-12 00:16:40] INFO: Date: 2025-07-12 00:16:40
+[2025-07-12 00:16:40] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:40] INFO: Tests: /mnt/c/Users/kingc/OptimPV/tests
+[2025-07-12 00:16:40] INFO: Pytest: ❌ Non disponible
+[2025-07-12 00:16:40] INFO: ================================================================================
+[2025-07-12 00:16:46] INFO: === DÉBUT DE SESSION DE TESTS ===
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - === DÉBUT DE SESSION DE TESTS ===
+[2025-07-12 00:16:46] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:46] INFO: Pytest disponible: False
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Pytest disponible: False
+[2025-07-12 00:16:46] INFO: ================================================================================
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ================================================================================
+[2025-07-12 00:16:46] INFO: OptimPV - Test Runner Professionnel
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - OptimPV - Test Runner Professionnel
+[2025-07-12 00:16:46] INFO: ================================================================================
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ================================================================================
+[2025-07-12 00:16:46] INFO: Date: 2025-07-12 00:16:46
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Date: 2025-07-12 00:16:46
+[2025-07-12 00:16:46] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:46] INFO: Tests: /mnt/c/Users/kingc/OptimPV/tests
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Tests: /mnt/c/Users/kingc/OptimPV/tests
+[2025-07-12 00:16:46] INFO: Pytest: ❌ Non disponible
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Pytest: ❌ Non disponible
+[2025-07-12 00:16:46] INFO: ================================================================================
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ================================================================================
+[2025-07-12 00:16:46] INFO: 
+============================================================
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - 
+============================================================
+[2025-07-12 00:16:46] INFO: 💼 Exécution: ERP
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - 💼 Exécution: ERP
+[2025-07-12 00:16:46] INFO: ============================================================
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ============================================================
+[2025-07-12 00:16:46] INFO: 📁 Répertoire: /mnt/c/Users/kingc/OptimPV/tests/test_erp_client
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - 📁 Répertoire: /mnt/c/Users/kingc/OptimPV/tests/test_erp_client
+[2025-07-12 00:16:46] INFO: ⏱️  Timeout: 480s
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ⏱️  Timeout: 480s
+[2025-07-12 00:16:46] OUTPUT: ⚠️  Pytest non disponible, exécution manuelle des tests...
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ⚠️  Pytest non disponible, exécution manuelle des tests...
+[2025-07-12 00:16:46] OUTPUT: ❌ test_database.py
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ❌ test_database.py
+[2025-07-12 00:16:46] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_database.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_database.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2025-07-12 00:16:46] OUTPUT: ❌ test_end_to_end.py
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ❌ test_end_to_end.py
+[2025-07-12 00:16:46] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_end_to_end.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_end_to_end.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2025-07-12 00:16:46] OUTPUT: ❌ test_integration.py
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ❌ test_integration.py
+[2025-07-12 00:16:46] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_integration.py", line 12, in <module>
+    from modules.erp_client.database.erp_database import ERPDatab
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_integration.py", line 12, in <module>
+    from modules.erp_client.database.erp_database import ERPDatab
+[2025-07-12 00:16:46] OUTPUT: ❌ test_models.py
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - ❌ test_models.py
+[2025-07-12 00:16:46] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_models.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+2025-07-12 00:16:46 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_models.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2025-07-12 00:16:47] OUTPUT: ❌ test_module_integration.py
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - ❌ test_module_integration.py
+[2025-07-12 00:16:47] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_module_integration.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pyt
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_module_integration.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pyt
+[2025-07-12 00:16:47] OUTPUT: ❌ test_services.py
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - ❌ test_services.py
+[2025-07-12 00:16:47] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_services.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_services.py", line 7, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2025-07-12 00:16:47] OUTPUT: ❌ test_simple.py
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - ❌ test_simple.py
+[2025-07-12 00:16:47] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_simple.py", line 11, in <module>
+    from modules.erp_client.database.erp_database import ERPDatabase
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_simple.py", line 11, in <module>
+    from modules.erp_client.database.erp_database import ERPDatabase
+[2025-07-12 00:16:47] OUTPUT: ❌ test_ui_integration.py
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - ❌ test_ui_integration.py
+[2025-07-12 00:16:47] OUTPUT: Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_ui_integration.py", line 6, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - Traceback (most recent call last):
+  File "/mnt/c/Users/kingc/OptimPV/tests/test_erp_client/test_ui_integration.py", line 6, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2025-07-12 00:16:47] INFO: ❌ ERP: 8 test(s) échoué(s) (1.77s)
+2025-07-12 00:16:47 - OptimPV_TestRunner - INFO - ❌ ERP: 8 test(s) échoué(s) (1.77s)
+[2025-07-12 00:16:47] DEBUG: Résultat erp: {'status': 'FAILED', 'tests_run': 8, 'passed': 0, 'failed': 8, 'time': 1.7683074474334717}
+================================================================================
+RÉSUMÉ DE SESSION DE TESTS - 2025-07-12 00:16:46
+================================================================================
+Durée totale: 1.77 secondes
+Nombre de catégories testées: 1
+
+STATISTIQUES GLOBALES:
+  Tests exécutés: 8
+  Tests réussis: 0
+  Tests échoués: 8
+  Taux de réussite: 0.0%
+
+DÉTAILS PAR CATÉGORIE:
+  ERP: FAILED - 0/8 réussis (1.77s)
+
+================================================================================
+
+[2025-07-12 00:16:55] INFO: === DÉBUT DE SESSION DE TESTS ===
+[2025-07-12 00:16:55] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:55] INFO: Pytest disponible: False
+[2025-07-12 00:16:55] INFO: ================================================================================
+[2025-07-12 00:16:55] INFO: OptimPV - Test Runner Professionnel
+[2025-07-12 00:16:55] INFO: ================================================================================
+[2025-07-12 00:16:55] INFO: Date: 2025-07-12 00:16:55
+[2025-07-12 00:16:55] INFO: Projet: /mnt/c/Users/kingc/OptimPV
+[2025-07-12 00:16:55] INFO: Tests: /mnt/c/Users/kingc/OptimPV/tests
+[2025-07-12 00:16:55] INFO: Pytest: ❌ Non disponible
+[2025-07-12 00:16:55] INFO: ================================================================================
+[2025-07-12 00:16:55] INFO: 
+============================================================
+[2025-07-12 00:16:55] INFO: 🛠️ Exécution: UTILS
+[2025-07-12 00:16:55] INFO: ============================================================
+[2025-07-12 00:16:55] INFO: 📁 Répertoire: /mnt/c/Users/kingc/OptimPV/tests/utils
+[2025-07-12 00:16:55] INFO: ⏱️  Timeout: 180s
+[2025-07-12 00:16:55] OUTPUT: ⚠️  Pytest non disponible, exécution manuelle des tests...
+[2025-07-12 00:16:55] INFO: ⚠️  UTILS: Statut inconnu
+[2025-07-12 00:16:55] DEBUG: Résultat utils: {'status': 'NO_TESTS', 'tests_run': 0, 'passed': 0, 'failed': 0, 'time': 0.004049539566040039}
+================================================================================
+RÉSUMÉ DE SESSION DE TESTS - 2025-07-12 00:16:55
+================================================================================
+Durée totale: 0.00 secondes
+Nombre de catégories testées: 1
+
+STATISTIQUES GLOBALES:
+  Tests exécutés: 0
+  Tests réussis: 0
+  Tests échoués: 0
+  Taux de réussite: 0.0%
+
+DÉTAILS PAR CATÉGORIE:
+  UTILS: NO_TESTS - 0/0 réussis (0.00s)
+
+================================================================================
+

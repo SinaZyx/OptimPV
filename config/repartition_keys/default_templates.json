@@ -1,0 +1,109 @@
+[
+  {
+    "template_id": "equitable",
+    "template_name": "Répartition Équitable",
+    "description": "Répartition équitable entre tous les participants",
+    "template_type": "equitable",
+    "keys_pattern": {},
+    "rules": [],
+    "metadata": {
+      "icon": "⚖️",
+      "recommended_for": [
+        "Début de projet",
+        "Test"
+      ],
+      "created_date": "2025-07-04T09:30:43.047580"
+    }
+  },
+  {
+    "template_id": "consumption_based",
+    "template_name": "Basé sur Consommation",
+    "description": "Répartition proportionnelle à la consommation historique",
+    "template_type": "consumption_based",
+    "keys_pattern": {},
+    "rules": [],
+    "metadata": {
+      "icon": "📊",
+      "recommended_for": [
+        "Optimisation économique",
+        "Sites avec historique"
+      ],
+      "created_date": "2025-07-04T09:30:43.047580"
+    }
+  },
+  {
+    "template_id": "priority_pme",
+    "template_name": "Priorité PME",
+    "description": "Favorise les sites professionnels et PME",
+    "template_type": "priority",
+    "keys_pattern": {},
+    "rules": [
+      {
+        "rule_id": "pme_priority_1",
+        "rule_name": "Priorité haute PME",
+        "rule_type": "priority",
+        "priority": 100,
+        "parameters": {
+          "site_types": [
+            "PME",
+            "Professionnel"
+          ],
+          "allocation_boost": 1.5
+        },
+        "conditions": [],
+        "target_sites": [],
+        "enabled": true
+      }
+    ],
+    "metadata": {
+      "icon": "🏭",
+      "recommended_for": [
+        "Zones d'activité",
+        "Parcs d'entreprises"
+      ],
+      "created_date": "2025-07-04T09:30:43.047580"
+    }
+  },
+  {
+    "template_id": "residential_first",
+    "template_name": "Résidentiel Prioritaire",
+    "description": "Priorise les sites résidentiels",
+    "template_type": "priority",
+    "keys_pattern": {},
+    "rules": [
+      {
+        "rule_id": "residential_priority_1",
+        "rule_name": "Priorité résidentiel",
+        "rule_type": "priority",
+        "priority": 90,
+        "parameters": {
+          "site_types": [
+            "Résidentiel",
+            "Maison individuelle"
+          ],
+          "time_slots": {
+            "morning": [
+              6,
+              9
+            ],
+            "evening": [
+              18,
+              22
+            ]
+          }
+        },
+        "conditions": [],
+        "target_sites": [],
+        "enabled": true
+      }
+    ],
+    "metadata": {
+      "icon": "🏠",
+      "recommended_for": [
+        "Quartiers résidentiels",
+        "Copropriétés"
+      ],
+      "created_date": "2025-07-04T09:30:43.047580"
+    }
+  }
+]
