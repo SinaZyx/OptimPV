@@ -260,7 +260,7 @@ def create_cumulative_savings_chart(results_data, config):
              st.error("Index non Datetime pour économies cumulées.")
              return None
              
-    autoconsommation_par_an = monthly_data[autoconso_col].resample('YE').sum()
+    autoconsommation_par_an = monthly_data[autoconso_col].resample('Y').sum()
     autoconsommation_annuelle_ref = autoconsommation_par_an.mean() if not autoconsommation_par_an.empty else 0
     if autoconsommation_annuelle_ref <= 0:
          st.warning("Volume d'autoconsommation annuel moyen nul ou négatif pour économies cumulées.")

@@ -35,36 +35,54 @@ def render_erp_module():
     # Header du module
     st.title("🏢 Module ERP - Gestion Clients")
     
-    # Navigation par onglets professionnels
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+    # Gestion de l'onglet actif
+    if 'erp_active_tab' not in st.session_state:
+        st.session_state.erp_active_tab = "💼 Dashboard Commercial"
+    
+    # Navigation par onglets
+    tab_names = [
         "💼 Dashboard Commercial",
         "👥 Clients",
-        "➕ Nouveau client", 
         "💰 Tarification",
         "🔌 Autoconsommation",
         "🗺️ Cartographie",
         "📊 Analytics"
-    ])
+    ]
     
-    with tab1:
+    # Vérifier que l'onglet actuel existe dans la liste
+    if st.session_state.erp_active_tab not in tab_names:
+        st.session_state.erp_active_tab = "💼 Dashboard Commercial"
+    
+    # Utiliser un conteneur pour forcer la navigation
+    selected_tab = st.radio(
+        "Navigation",
+        tab_names,
+        index=tab_names.index(st.session_state.erp_active_tab),
+        horizontal=True,
+        label_visibility="collapsed"
+    )
+    st.session_state.erp_active_tab = selected_tab
+    
+    # Divider pour séparer la navigation du contenu
+    st.divider()
+    
+    # Afficher le contenu en fonction de l'onglet sélectionné
+    if st.session_state.erp_active_tab == "💼 Dashboard Commercial":
         render_commercial_dashboard_tab(services)
         
-    with tab2:
+    elif st.session_state.erp_active_tab == "👥 Clients":
         render_clients_tab(services)
         
-    with tab3:
-        render_new_client_tab(services)
-        
-    with tab4:
+    elif st.session_state.erp_active_tab == "💰 Tarification":
         render_pricing_tab(services)
         
-    with tab5:
+    elif st.session_state.erp_active_tab == "🔌 Autoconsommation":
         render_autoconso_tab(services)
         
-    with tab6:
+    elif st.session_state.erp_active_tab == "🗺️ Cartographie":
         render_map_tab(services)
         
-    with tab7:
+    elif st.session_state.erp_active_tab == "📊 Analytics":
         render_statistics_tab(services)
         
     # Gérer les actions depuis d'autres modules
@@ -132,20 +150,89 @@ def render_clients_tab(services: dict):
     """
     from .client_list_pro import render_professional_client_list
     
-    render_professional_client_list(
-        client_service=services['client'],
-        pricing_service=services['pricing'],
-        capacity_service=services['capacity']
-    )
+    # Gérer le mode d'affichage (liste, création ou édition)
+    if 'erp_client_mode' not in st.session_state:
+        st.session_state.erp_client_mode = 'list'
+    
+    # Vérifier si on doit passer en mode édition
+    if 'edit_client' in st.session_state and st.session_state.erp_client_mode == 'list':
+        st.session_state.erp_client_mode = 'edit'
+        st.session_state.editing_client_id = st.session_state['edit_client']
+        del st.session_state['edit_client']
+    
+    # Affichage selon le mode
+    if st.session_state.erp_client_mode == 'create':
+        render_new_client_inline(services)
+    elif st.session_state.erp_client_mode == 'edit':
+        render_edit_client_inline(services)
+    else:
+        # Afficher la liste avec le bouton de création intégré
+        render_professional_client_list(
+            client_service=services['client'],
+            pricing_service=services['pricing'],
+            capacity_service=services['capacity']
+        )
 
 
-def render_new_client_tab(services: dict):
-    """Onglet de création de nouveau client.
+def render_edit_client_inline(services: dict):
+    """Affiche le formulaire d'édition dans l'onglet Clients.
     
     Args:
         services: Dictionnaire des services ERP
     """
-    st.header("➕ Créer un nouveau client")
+    # Récupérer le client à éditer
+    client_id = st.session_state.get('editing_client_id')
+    if not client_id:
+        st.error("Aucun client à éditer")
+        st.session_state.erp_client_mode = 'list'
+        st.rerun()
+        return
+    
+    client = services['client'].get_by_id(client_id)
+    if not client:
+        st.error("Client introuvable")
+        st.session_state.erp_client_mode = 'list'
+        st.rerun()
+        return
+    
+    # Header avec bouton retour
+    col1, col2 = st.columns([6, 1])
+    with col1:
+        st.header(f"✏️ Édition du client : {client.nom}")
+    with col2:
+        if st.button("⬅ Retour", type="secondary"):
+            st.session_state.erp_client_mode = 'list'
+            if 'editing_client_id' in st.session_state:
+                del st.session_state['editing_client_id']
+            st.rerun()
+    
+    # Afficher le formulaire d'édition
+    result = render_client_form(client=client, client_service=services['client'])
+    
+    if result:
+        # Retour automatique à la liste après édition réussie
+        st.session_state.erp_client_mode = 'list'
+        if 'editing_client_id' in st.session_state:
+            del st.session_state['editing_client_id']
+        import time
+        time.sleep(1.5)  # Pause pour voir le message de succès
+        st.rerun()
+
+
+def render_new_client_inline(services: dict):
+    """Affiche le formulaire de création dans l'onglet Clients.
+    
+    Args:
+        services: Dictionnaire des services ERP
+    """
+    # Header avec bouton retour
+    col1, col2 = st.columns([6, 1])
+    with col1:
+        st.header("➕ Créer un nouveau client")
+    with col2:
+        if st.button("⬅ Retour", type="secondary"):
+            st.session_state.erp_client_mode = 'list'
+            st.rerun()
     
     # Choix du mode de création
     mode = st.radio(
@@ -161,28 +248,58 @@ def render_new_client_tab(services: dict):
             # Proposer des actions suivantes
             st.success(f"✅ Client '{result.nom}' créé avec succès!")
             
+            # Vérifier si on doit proposer la carte
+            if 'show_map_for_client' in st.session_state and st.session_state['show_map_for_client'] == result.id:
+                col_map, col_skip = st.columns([2, 1])
+                with col_map:
+                    if st.button("📍 Ajuster position sur carte", type="primary", use_container_width=True):
+                        st.session_state['edit_client_gps'] = result.id
+                        st.rerun()
+                with col_skip:
+                    if st.button("➡️ Passer", use_container_width=True):
+                        if 'show_map_for_client' in st.session_state:
+                            del st.session_state['show_map_for_client']
+                        if 'client_address_parts' in st.session_state:
+                            del st.session_state['client_address_parts']
+                        st.rerun()
+            
+            st.markdown("---")
+            
             col1, col2, col3 = st.columns(3)
             with col1:
                 if st.button("💰 Définir les prix"):
                     st.session_state['selected_client_id'] = result.id
-                    st.session_state['active_tab'] = 2  # Onglet prix
+                    st.session_state.erp_active_tab = "💰 Tarification"
+                    st.session_state.erp_client_mode = 'list'  # Retour à la liste
                     st.rerun()
                     
             with col2:
                 if st.button("🔌 Gérer l'autoconso"):
                     st.session_state['selected_client_id'] = result.id
-                    st.session_state['active_tab'] = 3  # Onglet autoconso
+                    st.session_state.erp_active_tab = "🔌 Autoconsommation"
+                    st.session_state.erp_client_mode = 'list'  # Retour à la liste
                     st.rerun()
                     
             with col3:
                 if st.button("➕ Créer un autre"):
                     st.rerun()
+            
+            # Bouton pour retourner à la liste
+            st.markdown("---")
+            if st.button("⬅ Retour à la liste des clients", use_container_width=True):
+                st.session_state.erp_client_mode = 'list'
+                st.rerun()
                     
     else:
         # Création rapide
         result = render_client_quick_create()
         if result:
             st.success(f"✅ Client '{result.nom}' créé rapidement!")
+            # Optionnel : retour automatique à la liste après création rapide
+            import time
+            time.sleep(2)
+            st.session_state.erp_client_mode = 'list'
+            st.rerun()
 
 
 def render_pricing_tab(services: dict):

@@ -245,7 +245,7 @@ class VisualizationModule:
                 fig = create_financial_indicators_chart(results_data)
                 if fig: st.plotly_chart(fig, use_container_width=True)
                 
-                years_available = len(results_data.get('monthly_data', pd.DataFrame()).resample('YE').count().index)
+                years_available = len(results_data.get('monthly_data', pd.DataFrame()).resample('Y').count().index)
                 if years_available > 0:
                     year_index = st.slider(
                         "Sélectionner l'année pour la cascade", 

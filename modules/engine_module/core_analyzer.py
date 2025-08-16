@@ -340,7 +340,7 @@ class AnalysisEngine:
             ref_year = df_agg_for_ref.index.year.min() if not df_agg_for_ref.empty else date_debut_operations.year
             reference_data_ts_hourly = df_agg_for_ref[df_agg_for_ref.index.year == ref_year].copy() if not df_agg_for_ref.empty else pd.DataFrame()
 
-            monthly_index = pd.date_range(start=date_debut_simulation_effective, periods=num_total_simulation_months, freq='ME') # 'ME' pour fin de mois
+            monthly_index = pd.date_range(start=date_debut_simulation_effective, periods=num_total_simulation_months, freq='M') # 'M' pour fin de mois
             monthly_results_df = pd.DataFrame(index=monthly_index)
             
             # Définition unique des colonnes

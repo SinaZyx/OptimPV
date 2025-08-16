@@ -140,7 +140,7 @@ def create_client_map(
         
     # Récupérer tous les clients avec coordonnées
     all_clients = client_service.get_all()
-    clients_with_coords = [c for c in all_clients if c.has_coordinates()]
+    clients_with_coords = [c for c in all_clients if c.has_coordinates]
     
     if not clients_with_coords:
         return None
@@ -534,7 +534,7 @@ def render_map_statistics(client_service: ClientService, capacity_service: Capac
         
     with col4:
         # Distance moyenne
-        clients_with_coords = [c for c in client_service.get_all() if c.has_coordinates()]
+        clients_with_coords = [c for c in client_service.get_all() if c.has_coordinates]
         if len(clients_with_coords) > 1:
             # Calculer la distance moyenne entre clients
             from ..services.geolocation_service import GeolocationService

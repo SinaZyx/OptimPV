@@ -11,6 +11,9 @@ from typing import Optional, Dict, Any
 
 from ..models.client import Client
 from ..services.client_service import ClientService
+from .components.address_autocomplete_widget_v2 import render_address_autocomplete_v2
+from .components.address_autocomplete_widget import render_address_autocomplete
+from .components.true_autocomplete_widget import FormCompatibleAutocomplete
 
 logger = logging.getLogger(__name__)
 
@@ -33,6 +36,14 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
     st.subheader("✏️ Édition client" if is_edit else "➕ Nouveau client")
     
     with st.form("client_form", clear_on_submit=False):
+        # D'abord obtenir l'adresse avec autocomplétion (invisible, juste pour récupérer les valeurs)
+        # On fait cela en premier pour avoir code_postal disponible
+        adresse = None
+        code_postal = None
+        ville = None
+        lat_auto = None
+        lon_auto = None
+        
         # Colonnes pour la mise en page
         col1, col2 = st.columns(2)
         
@@ -66,11 +77,12 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
                 format_func=lambda x: x.capitalize()
             )
             
-            # Zone géographique
+            # Zone géographique (sera mise à jour après l'autocomplétion)
             zone_geographique = st.text_input(
                 "Zone géographique",
                 value=client.zone_geographique if is_edit and client.zone_geographique else "",
-                help="Sera assignée automatiquement selon le code postal si vide"
+                help="Sera détectée automatiquement via le code postal de l'adresse",
+                key="zone_geo_input"
             )
             
             # Statut
@@ -82,27 +94,32 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
         with col2:
             st.markdown("### 📍 Coordonnées")
             
-            # Adresse
-            adresse = st.text_area(
-                "Adresse",
-                value=client.adresse if is_edit and client.adresse else "",
-                height=100
+            # Widget d'autocomplétion d'adresse avec vraie autocomplétion
+            st.markdown("#### 🏠 Adresse avec autocomplétion en temps réel")
+            
+            # Utiliser le nouveau widget avec vraie autocomplétion
+            autocomplete_widget = FormCompatibleAutocomplete(
+                key=f"client_form_autocomplete_{client.id if is_edit else 'new'}"
             )
             
-            # Code postal et ville
-            col_cp, col_ville = st.columns([1, 2])
-            with col_cp:
-                code_postal = st.text_input(
-                    "Code postal",
-                    value=client.code_postal if is_edit and client.code_postal else "",
-                    max_chars=10
-                )
-            with col_ville:
-                ville = st.text_input(
-                    "Ville",
-                    value=client.ville if is_edit and client.ville else "",
-                    max_chars=100
-                )
+            # Si on édite, pré-remplir les valeurs
+            if is_edit and client.adresse:
+                # Mettre les valeurs existantes dans le state
+                state_key = f"client_form_autocomplete_{client.id}_state"
+                if state_key not in st.session_state:
+                    st.session_state[state_key] = {
+                        "search_query": f"{client.adresse} {client.code_postal} {client.ville}",
+                        "suggestions": [],
+                        "selected_index": 0
+                    }
+            
+            # Afficher le widget
+            adresse, code_postal, ville, lat_auto, lon_auto = autocomplete_widget.render_in_form()
+            
+            # Mise à jour automatique des coordonnées si une adresse a été sélectionnée
+            if lat_auto is not None and lon_auto is not None:
+                st.session_state.temp_latitude = lat_auto
+                st.session_state.temp_longitude = lon_auto
                 
             # Téléphone et email
             telephone = st.text_input(
@@ -140,25 +157,47 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
                 
             with col4:
                 # Coordonnées GPS
-                st.markdown("**Coordonnées GPS** (laisser vide pour géocodage auto)")
+                st.markdown("**Coordonnées GPS**")
+                
+                # Initialiser les coordonnées dans session state si nécessaire
+                if 'temp_latitude' not in st.session_state:
+                    st.session_state.temp_latitude = client.latitude if is_edit and client.latitude else None
+                if 'temp_longitude' not in st.session_state:
+                    st.session_state.temp_longitude = client.longitude if is_edit and client.longitude else None
+                
+                # Note pour la sélection sur carte
+                if adresse or ville or code_postal:
+                    if st.session_state.get('temp_latitude') and st.session_state.get('temp_longitude'):
+                        st.success("✅ Coordonnées GPS détectées automatiquement via l'autocomplétion")
+                    else:
+                        st.info("💡 Après création/modification, vous pourrez ajuster précisément la position sur une carte")
+                
+                # Saisie des coordonnées
                 col_lat, col_lon = st.columns(2)
                 with col_lat:
+                    # Utiliser les coordonnées de l'autocomplétion si disponibles
+                    default_lat = st.session_state.get('temp_latitude', 
+                                                      client.latitude if is_edit and client.latitude else 0.0)
                     latitude = st.number_input(
                         "Latitude",
-                        value=client.latitude if is_edit and client.latitude else 0.0,
+                        value=float(default_lat) if default_lat else 0.0,
                         min_value=-90.0,
                         max_value=90.0,
                         format="%.6f",
-                        help="Entre -90 et 90"
+                        help="Entre -90 et 90 (rempli automatiquement si adresse sélectionnée)"
                     )
+                        
                 with col_lon:
+                    # Utiliser les coordonnées de l'autocomplétion si disponibles
+                    default_lon = st.session_state.get('temp_longitude',
+                                                      client.longitude if is_edit and client.longitude else 0.0)
                     longitude = st.number_input(
                         "Longitude", 
-                        value=client.longitude if is_edit and client.longitude else 0.0,
+                        value=float(default_lon) if default_lon else 0.0,
                         min_value=-180.0,
                         max_value=180.0,
                         format="%.6f",
-                        help="Entre -180 et 180"
+                        help="Entre -180 et 180 (rempli automatiquement si adresse sélectionnée)"
                     )
                     
             # Notes
@@ -213,10 +252,10 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
                 'actif': actif
             }
             
-            # Gérer les coordonnées GPS
-            if latitude != 0.0 or longitude != 0.0:
-                client_data['latitude'] = latitude if latitude != 0.0 else None
-                client_data['longitude'] = longitude if longitude != 0.0 else None
+            # Gérer les coordonnées GPS depuis session state
+            if st.session_state.temp_latitude is not None and st.session_state.temp_longitude is not None:
+                client_data['latitude'] = st.session_state.temp_latitude
+                client_data['longitude'] = st.session_state.temp_longitude
             else:
                 client_data['latitude'] = None
                 client_data['longitude'] = None
@@ -247,6 +286,17 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
                     zone = client_service.assign_zone_by_postal_code(result)
                     if zone:
                         st.info(f"🗺️ Zone géographique assignée: {zone}")
+            
+            # Proposition de géolocalisation sur carte si coordonnées pas définies
+            if result and (not result.latitude or not result.longitude or (result.latitude == 0.0 and result.longitude == 0.0)):
+                if adresse or ville or code_postal:
+                    st.session_state['show_map_for_client'] = result.id
+                    st.session_state['client_address_parts'] = {
+                        'adresse': adresse,
+                        'code_postal': code_postal,
+                        'ville': ville
+                    }
+                    st.info("📍 Cliquez sur 'Ajuster position sur carte' ci-dessous pour définir précisément l'emplacement")
                         
             return result
             
@@ -259,8 +309,17 @@ def render_client_form(client: Optional[Client] = None, client_service: ClientSe
             return None
             
     elif cancel:
-        st.info("Opération annulée")
-        return None
+        # Retour à la liste des clients
+        if 'erp_client_mode' in st.session_state:
+            st.session_state.erp_client_mode = 'list'
+        # Nettoyer le session state
+        if 'temp_latitude' in st.session_state:
+            del st.session_state.temp_latitude
+        if 'temp_longitude' in st.session_state:
+            del st.session_state.temp_longitude
+        if 'selected_coordinates' in st.session_state:
+            del st.session_state.selected_coordinates
+        st.rerun()
         
     return None
 
@@ -275,6 +334,7 @@ def render_client_quick_create() -> Optional[Client]:
     
     st.subheader("⚡ Création rapide client")
     
+    # Première ligne : informations de base
     col1, col2, col3 = st.columns([2, 2, 1])
     
     with col1:
@@ -288,6 +348,30 @@ def render_client_quick_create() -> Optional[Client]:
             "Type *",
             options=['consommateur', 'producteur', 'prosumer']
         )
+    
+    # Option pour ajouter une adresse
+    with st.expander("📍 Ajouter une adresse (optionnel)", expanded=False):
+        from .components.address_autocomplete_widget import render_simple_address_search
+        
+        st.info("💡 Recherchez et sélectionnez une adresse pour remplir automatiquement les champs")
+        
+        selected_address = render_simple_address_search(
+            label="Recherche d'adresse",
+            key="quick_create_address",
+            help_text="Tapez au moins 3 caractères pour rechercher une adresse"
+        )
+        
+        if selected_address:
+            st.success(f"✅ Adresse sélectionnée: {selected_address.display_label}")
+            
+            # Afficher les détails
+            col1, col2 = st.columns(2)
+            with col1:
+                st.write(f"**Code postal:** {selected_address.postcode}")
+                st.write(f"**Ville:** {selected_address.city}")
+            with col2:
+                st.write(f"**Latitude:** {selected_address.latitude:.6f}")
+                st.write(f"**Longitude:** {selected_address.longitude:.6f}")
         
     if st.button("➕ Créer", type="primary"):
         if not code or not nom:
@@ -295,14 +379,42 @@ def render_client_quick_create() -> Optional[Client]:
             return None
             
         try:
-            client = Client(
-                code_client=code,
-                nom=nom,
-                type_client=type_client
-            )
+            # Préparer les données du client
+            client_data = {
+                'code_client': code.upper(),
+                'nom': nom,
+                'type_client': type_client
+            }
             
+            # Ajouter l'adresse si sélectionnée
+            if selected_address:
+                client_data.update({
+                    'adresse': selected_address.street,
+                    'code_postal': selected_address.postcode,
+                    'ville': selected_address.city,
+                    'latitude': selected_address.latitude,
+                    'longitude': selected_address.longitude
+                })
+                
+                # Zone géographique
+                from ..services.address_autocomplete import get_address_service
+                service = get_address_service()
+                client_data['zone_geographique'] = service.parse_zone_from_postcode(selected_address.postcode)
+            
+            client = Client(**client_data)
             result = client_service.create_client(client)
+            
             st.success(f"✅ Client '{result.nom}' créé!")
+            
+            if selected_address:
+                st.info(f"📍 Avec adresse: {selected_address.display_label}")
+            
+            # Retour automatique à la liste après création
+            if 'erp_client_mode' in st.session_state:
+                st.session_state.erp_client_mode = 'list'
+                import time
+                time.sleep(2)  # Pause pour voir les messages de succès
+                st.rerun()
             return result
             
         except Exception as e:

@@ -11,6 +11,7 @@ requests>=2.25.0
 # Cartographie et visualisation
 pydeck>=0.8.0
 folium>=0.14.0
+streamlit-folium>=0.13.0
 
 # Sécurité et authentification
 bcrypt>=4.0.0

@@ -55,11 +55,11 @@ Le module de facturation OptimPV est une solution professionnelle complète de g
 - Intégrations ERP (Sage, Cegid, Odoo)
 
 ### 🎨 Interface utilisateur moderne
-- Design responsive avec thèmes personnalisables
+- Design responsive intégré avec OptimPV
 - Navigation intuitive avec recherche avancée
 - Actions en masse et auto-save
 - Tour guidé pour nouveaux utilisateurs
-- Mode sombre/clair
+- Thème unifié avec l'application principale
 
 ## 📁 Structure du module
 
@@ -131,7 +131,6 @@ modules/facturation/
 │
 ├── 🎨 Interface utilisateur
 │   ├── ui_components.py                  # Composants réutilisables
-│   ├── ui_themes.py                      # Système de thèmes
 │   ├── export_manager.py                 # Gestionnaire d'exports
 │   └── state_manager.py                  # Gestion d'état avancée
 │

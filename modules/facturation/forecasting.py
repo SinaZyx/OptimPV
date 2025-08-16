@@ -103,6 +103,7 @@ class ForecastResult:
     contributing_factors: List[str]
     seasonality_factor: float = 1.0
     trend_factor: float = 1.0
+    trend_direction: str = "stable"
 
 @dataclass
 class CashFlowForecast:
@@ -346,7 +347,8 @@ class ForecastingEngine:
                     scenario=ForecastScenario.REALISTIC,
                     contributing_factors=factors,
                     seasonality_factor=seasonal_factor,
-                    trend_factor=1.0  # Would be calculated from trend analysis
+                    trend_factor=1.0,  # Would be calculated from trend analysis
+                    trend_direction="hausse" if adjusted_prediction > monthly_revenue.mean() else "baisse"
                 )
                 
                 forecasts.append(forecast)
@@ -1036,7 +1038,8 @@ class ForecastingEngine:
                 scenario=ForecastScenario.REALISTIC,
                 contributing_factors=["Solar seasonality", "Historical growth trend"],
                 seasonality_factor=seasonal_factor,
-                trend_factor=growth_factor
+                trend_factor=growth_factor,
+                trend_direction="hausse" if growth_factor > 1.0 else "baisse"
             )
             
             forecasts.append(forecast)

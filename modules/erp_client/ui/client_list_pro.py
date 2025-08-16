@@ -28,7 +28,7 @@ def render_professional_client_list(
     """Affiche la liste des clients en mode professionnel."""
     
     # En-tête avec actions
-    col1, col2, col3 = st.columns([2, 1, 1])
+    col1, col2, col3, col4 = st.columns([3, 1, 1, 1])
     
     with col1:
         st.header("👥 Gestion des Clients")
@@ -41,7 +41,12 @@ def render_professional_client_list(
         )
     
     with col3:
-        if st.button("⚡ Actions rapides", type="primary"):
+        if st.button("➕ Nouveau client", type="primary"):
+            st.session_state.erp_client_mode = 'create'
+            st.rerun()
+    
+    with col4:
+        if st.button("⚡ Actions"):
             st.session_state['show_quick_actions'] = True
     
     # Barre de recherche et filtres avancés
@@ -478,15 +483,15 @@ def render_bulk_actions(
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        if st.button("📧 Email groupé", key="bulk_email"):
+        if st.button("📧 Email groupé", key="bulk_email_btn"):
             st.session_state['bulk_email'] = selected_ids
     
     with col2:
-        if st.button("🏷️ Assigner tags", key="bulk_tags"):
+        if st.button("🏷️ Assigner tags", key="bulk_tags_btn"):
             st.session_state['bulk_tags'] = selected_ids
     
     with col3:
-        if st.button("💰 Maj. tarifs", key="bulk_pricing"):
+        if st.button("💰 Maj. tarifs", key="bulk_pricing_btn"):
             st.session_state['bulk_pricing'] = selected_ids
     
     with col4:

@@ -26,7 +26,7 @@ def create_financial_indicators_chart(results):
              try: df_agg.index = pd.to_datetime(df_agg.index)
              except: st.error("Index non Datetime pour graphique indicateurs."); return None
                  
-        annual_data = df_agg.resample('YE').sum()
+        annual_data = df_agg.resample('Y').sum()
         annual_data['Year'] = annual_data.index.year
         
         required_cols = ['Revenus_Total', 'OPEX', 'EBITDA', 'Service_Dette'] # Simplifié, FCFE et Impots peuvent être complexes
@@ -107,7 +107,7 @@ def create_waterfall_cashflow_chart(results, year_index=4):
             try: df_agg.index = pd.to_datetime(df_agg.index)
             except: return None
     
-        annual_data = df_agg.resample('YE').sum()
+        annual_data = df_agg.resample('Y').sum()
         years = annual_data.index.year.tolist()
         if not years: return None
         year_index = min(year_index, len(years) - 1) # S'assurer que l'index est valide
@@ -207,7 +207,7 @@ def create_annual_revenue_breakdown_chart(results):
         try: monthly_df_agg.index = pd.to_datetime(monthly_df_agg.index)
         except: return None
     
-    annual_revenues = monthly_df_agg[required_cols].resample('YE').sum()
+    annual_revenues = monthly_df_agg[required_cols].resample('Y').sum()
     annual_revenues.index = annual_revenues.index.year
 
     fig = go.Figure()

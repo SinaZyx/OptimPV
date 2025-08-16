@@ -27,7 +27,6 @@ from .dashboard_data import DashboardDataProvider, AlertLevel
 from .forecasting import ForecastingEngine, ForecastScenario
 from .kpi_calculator import KPICalculator, KPICategory
 from .ui_components import UIComponents
-from .ui_themes import UIThemes
 from .export_manager import ExportManager
 
 logger = logging.getLogger(__name__)
@@ -35,29 +34,12 @@ logger = logging.getLogger(__name__)
 def show_facturation_page():
     """Main billing page interface with modern UI"""
     
-    # Initialize UI components and themes
+    # Initialize UI components
     ui = UIComponents()
-    themes = UIThemes()
     
-    # Apply theme
-    themes.apply_theme()
-    
-    # Modern header with theme selector
-    col1, col2 = st.columns([3, 1])
-    with col1:
-        st.title("💰 Facturation PMO")
-        st.markdown("*Gestion moderne de la facturation pour l'autoconsommation collective photovoltaïque*")
-    
-    with col2:
-        theme_choice = st.selectbox(
-            "🎨 Thème",
-            ["OptimPV Corporate", "Mode Sombre", "Mode Clair", "Personnalisé"],
-            key="theme_selector"
-        )
-        if theme_choice != st.session_state.get('current_theme', 'OptimPV Corporate'):
-            st.session_state.current_theme = theme_choice
-            themes.set_theme(theme_choice)
-            st.rerun()
+    # Modern header
+    st.title("💰 Facturation PMO")
+    st.markdown("*Gestion moderne de la facturation pour l'autoconsommation collective photovoltaïque*")
     
     # Initialize database and services
     if 'billing_db' not in st.session_state:
@@ -104,15 +86,26 @@ def show_facturation_page():
         "⚙️ Configuration": {"count": 0, "badge": None}
     }
     
-    # Create enhanced navigation
-    page = ui.create_enhanced_navigation(navigation_options)
+    # Initialize current page in session state if not present
+    if 'current_page' not in st.session_state:
+        st.session_state.current_page = "📊 Tableau de Bord"
     
     # Check for page navigation from quick actions
     if 'selected_nav_page' in st.session_state:
-        # Override page selection with quick action choice
-        page = st.session_state.selected_nav_page
+        # Update current page with quick action choice
+        st.session_state.current_page = st.session_state.selected_nav_page
         # Clear the selection after use
         del st.session_state.selected_nav_page
+    
+    # Create enhanced navigation
+    page = ui.create_enhanced_navigation(navigation_options)
+    
+    # Update current page if navigation changed
+    if page != st.session_state.current_page:
+        st.session_state.current_page = page
+    else:
+        # Use the stored current page
+        page = st.session_state.current_page
     
     # Route to appropriate page
     if "Tableau de Bord" in page:

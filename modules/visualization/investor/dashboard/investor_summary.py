@@ -270,7 +270,7 @@ def create_revenue_projection_chart(results_data):
             return None
             
         # Agrégation annuelle
-        annual_data = monthly_data.resample('YE').sum()
+        annual_data = monthly_data.resample('Y').sum()
         
         if 'Revenus_Total' in annual_data.columns:
             revenues = annual_data['Revenus_Total']

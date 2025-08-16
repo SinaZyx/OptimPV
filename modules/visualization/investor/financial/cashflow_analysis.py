@@ -30,7 +30,7 @@ def create_waterfall_cashflow_chart(results, year_index=4):
             except: 
                 return None
     
-        annual_data = df_agg.resample('YE').sum()
+        annual_data = df_agg.resample('Y').sum()
         years = annual_data.index.year.tolist()
         if not years:
             return None

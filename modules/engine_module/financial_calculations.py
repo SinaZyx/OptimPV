@@ -184,9 +184,9 @@ def calculate_lcoe_annual_aggregation(
         
 
         # 3. Agréger les coûts opérationnels et la production annuellement
-        opex_annual = df_exploitation['OPEX'].resample('YE').sum()
-        turpe_annual = df_exploitation['TURPE'].resample('YE').sum()
-        production_annual_kwh = df_exploitation['Production_kWh'].resample('YE').sum()
+        opex_annual = df_exploitation['OPEX'].resample('Y').sum()
+        turpe_annual = df_exploitation['TURPE'].resample('Y').sum()
+        production_annual_kwh = df_exploitation['Production_kWh'].resample('Y').sum()
         
         num_exploitation_years = len(production_annual_kwh)
 
@@ -370,9 +370,9 @@ def calculate_avg_dscr_revised(monthly_df_results: pd.DataFrame, corporate_tax_r
                 df_copy[col_dscr] = 0.0 # Ajouter la colonne avec des zéros pour éviter les erreurs
 
         try:
-            ebitda_annual = df_copy['EBITDA'].fillna(0).resample('YE').sum()
-            is_paid_annual = df_copy['Tax_Payment'].fillna(0).resample('YE').sum()
-            debt_service_annual = df_copy['Service_Dette'].fillna(0).resample('YE').sum()
+            ebitda_annual = df_copy['EBITDA'].fillna(0).resample('Y').sum()
+            is_paid_annual = df_copy['Tax_Payment'].fillna(0).resample('Y').sum()
+            debt_service_annual = df_copy['Service_Dette'].fillna(0).resample('Y').sum()
         except Exception as e_resample:
             logger.error(f"DSCR: Erreur lors du resample annuel: {e_resample}")
             return np.nan

@@ -32,7 +32,7 @@ def create_financial_indicators_chart(results):
                 st.error("Index non Datetime pour graphique indicateurs.")
                 return None
                 
-        annual_data = df_agg.resample('YE').sum()
+        annual_data = df_agg.resample('Y').sum()
         annual_data['Year'] = annual_data.index.year
         
         # Calcul FCFE si manquant

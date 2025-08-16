@@ -42,7 +42,7 @@ def create_annual_revenue_breakdown_chart(results):
             except: 
                 return None
         
-        annual_revenues = monthly_df_agg[required_cols].resample('YE').sum()
+        annual_revenues = monthly_df_agg[required_cols].resample('Y').sum()
         annual_revenues.index = annual_revenues.index.year
 
         fig = go.Figure()
