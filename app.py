@@ -16,6 +16,18 @@ st.set_page_config(
     page_icon="☀️", layout="wide", initial_sidebar_state="expanded"
 )
 
+# CSS pour masquer le menu hamburger (3 points)
+hide_menu_style = """
+<style>
+    #MainMenu {visibility: hidden;}
+    .stDeployButton {display:none;}
+    footer {visibility: hidden;}
+    #stDecoration {display:none;}
+</style>
+"""
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+
 # Ajouter le chemin du dossier 'modules' au path Python
 module_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'modules'))
 if module_path not in sys.path:

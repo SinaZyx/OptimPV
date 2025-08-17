@@ -5666,3 +5666,1727 @@
     Valeurs_non_nulles: {'Mois_4': '-189.21€', 'Mois_5': '-197.21€', 'Mois_6': '-201.90€', 'Mois_7': '7,509.12€', 'Mois_8': '-151.63€', 'Mois_9': '-107.88€', 'Mois_10': '-52.01€', 'Mois_11': '-41.05€'}
     Total_annuel: 6,568.22€
 ================================================================================
+[2025-08-16 16:16:21] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2028
+    Valeurs_non_nulles: {'Mois_1': '-50.08€', 'Mois_2': '-79.79€', 'Mois_3': '-153.95€', 'Mois_4': '-171.90€', 'Mois_5': '-198.32€', 'Mois_6': '-209.06€', 'Mois_7': '-214.02€', 'Mois_8': '-202.37€', 'Mois_9': '-160.79€', 'Mois_10': '-114.43€', 'Mois_11': '-55.19€', 'Mois_12': '-43.57€'}
+    Total_annuel: -1,653.45€
+================================================================================
+[2025-08-16 17:35:20] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:20] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:20] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:21] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:21] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:21] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:23] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:23] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:23] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:24] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:24] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:24] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:25] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:25] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:25] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:27] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:27] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:27] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:33] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:33] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:33] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:34] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:34] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:34] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:36] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:36] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:36] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:37] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:37] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:37] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:38] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:38] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:38] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:39] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:39] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:39] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:41] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:41] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:41] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:42] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:42] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:42] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:43] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:43] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:43] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:45] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:45] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:45] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:46] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:46] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:46] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:47] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:47] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:47] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:35:49] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:35:49] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:35:49] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:15] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:15] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:15] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:16] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:16] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:16] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:18] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:18] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:18] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:19] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:19] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:19] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:20] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:20] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:20] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:22] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:22] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:22] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:23] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:23] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:23] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:24] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:24] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:24] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:26] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:26] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:26] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:27] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:27] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:27] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:28] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:28] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:28] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:30] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:30] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:30] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:31] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:31] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:31] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:58] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:58] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:58] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:36:59] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:36:59] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:36:59] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:00] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:00] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:00] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:01] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:01] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:01] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:03] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:03] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:03] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:04] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:04] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:04] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:06] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:06] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:06] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:07] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:07] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:07] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:08] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:08] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:08] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:09] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:09] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:09] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:11] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:11] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:11] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:12] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:12] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:12] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:13] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:37:13] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:37:13] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:37:48] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_8': '-491.22€', 'Mois_9': '-347.49€', 'Mois_10': '-212.17€', 'Mois_11': '32,184.82€', 'Mois_12': '-115.48€'}
+    Total_annuel: 31,018.47€
+================================================================================
+[2025-08-16 17:37:53] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2026
+    Valeurs_non_nulles: {'Mois_1': '-176.39€', 'Mois_2': '-217.07€', 'Mois_3': '-335.29€', 'Mois_4': '-405.91€', 'Mois_5': '-491.62€', 'Mois_6': '-536.63€', 'Mois_7': '-544.73€', 'Mois_8': '-498.56€', 'Mois_9': '-354.18€', 'Mois_10': '-216.22€', 'Mois_11': '-137.77€', 'Mois_12': '-117.70€'}
+    Total_annuel: -4,032.08€
+================================================================================
+[2025-08-16 17:42:19] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:19] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:19] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:20] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:20] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:20] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:21] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:21] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:21] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:22] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:22] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:22] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:24] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:24] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:24] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:25] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:25] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:25] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:34] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:34] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:34] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:35] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:35] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:35] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:36] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:36] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:36] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:38] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:38] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:38] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:39] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:39] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:39] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:40] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:40] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:40] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:42] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:42] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:42] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:43] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:43] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:43] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:44] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:44] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:44] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:46] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:46] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:46] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:47] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:47] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:47] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:48] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:48] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:48] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:49] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:42:49] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:42:49] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:42:50] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '32,071.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 30,452.61€
+================================================================================
+[2025-08-16 17:42:57] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '32,071.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 30,452.61€
+================================================================================
+[2025-08-16 17:43:05] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '32,071.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 30,452.61€
+================================================================================
+[2025-08-16 17:44:03] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '32,071.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 30,452.61€
+================================================================================
+[2025-08-16 17:44:05] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:05] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:05] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:06] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:06] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:06] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:08] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:08] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:08] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:09] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:09] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:09] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:10] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:10] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:10] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:11] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:11] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:11] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:13] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:13] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:13] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:14] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:14] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:14] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:15] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:15] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:15] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:17] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:17] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:17] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:18] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:18] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:18] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:19] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:19] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:19] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:21] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:21] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:21] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:22] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:22] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:22] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:22] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '32,071.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 30,452.61€
+================================================================================
+[2025-08-16 17:44:27] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:27] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:27] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:28] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:28] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:28] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:29] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:29] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:29] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:31] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:31] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:31] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:32] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:32] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:32] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:33] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:33] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:33] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:35] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:35] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:35] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:36] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:36] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:36] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:37] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:37] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:37] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:39] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:39] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:39] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:41] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:41] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:41] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:43] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:43] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:43] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:45] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:45] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:45] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:46] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:46] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:46] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:48] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:48] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:48] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:51] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:51] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:51] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:54] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:54] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:54] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:56] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:56] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:56] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:44:58] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:44:58] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:44:58] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:45:00] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:45:00] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:45:00] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:45:02] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:45:02] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:45:02] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:45:02] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '25,615.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 23,996.61€
+================================================================================
+[2025-08-16 17:54:06] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '25,615.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 23,996.61€
+================================================================================
+[2025-08-16 17:54:08] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:08] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:08] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:09] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:09] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:09] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:11] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:11] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:11] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:12] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:12] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:12] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:13] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:13] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:13] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:15] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:15] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:15] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:15] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '25,615.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 23,996.61€
+================================================================================
+[2025-08-16 17:54:19] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:19] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:19] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:20] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:20] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:20] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:22] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:22] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:22] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:23] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:23] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:23] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:24] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: True
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:24] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:24] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:26] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:26] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:26] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:27] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:27] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:27] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:28] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:28] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:28] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:30] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:30] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:30] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:31] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:31] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:31] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:32] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:32] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:32] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:33] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:33] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:33] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:35] TVA_PLACEMENT: VÉRIFICATION ACTIVATION PLACEMENT
+    placement_tresorerie_active: False
+    is_optimization_mode: False
+    config_keys: ['nom_projet', 'localisation', 'date_debut_ppa', 'duree_ppa', 'duree_construction', 'amortissement_duree', 'valeur_residuelle_pct', 'cout_demantelement_pct', 'degradation_rate', 'taux_inflation', '...']
+================================================================================
+[2025-08-16 17:54:35] TVA_PLACEMENT: ÉTAT PLACEMENT TRÉSORERIE
+    placement_tresorerie_active: False
+    placement_tva_capex: True
+    placement_tva_exploitation: True
+    action: Placement ignoré
+================================================================================
+[2025-08-16 17:54:35] TVA_PLACEMENT: PLACEMENT TVA DÉSACTIVÉ - Pas d'exécution
+    raison: placement_tresorerie_active = False
+================================================================================
+[2025-08-16 17:54:35] TVA_PLACEMENT: AFFICHAGE TABLEAU - vat_net_payment
+    Ligne: (-) Paiement Net de TVA (ou + si encaissement)
+    Année: 2025
+    Valeurs_non_nulles: {'Mois_7': '-707.90€', 'Mois_8': '-486.50€', 'Mois_9': '-267.19€', 'Mois_10': '25,615.64€', 'Mois_11': '-157.44€'}
+    Total_annuel: 23,996.61€
+================================================================================
