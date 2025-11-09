@@ -156,7 +156,7 @@ def display_analysis_optimisation_section(scenario_name: str):
                     
                     # Utilisation des clés de config pour les contraintes
                     default_min_irr = float(current_config.get('constraint_min_irr_pct', 8.0))
-                    default_max_payback = float(current_config.get('constraint_max_payback', 18.0))
+                    default_max_payback = max(5.0, float(current_config.get('constraint_max_payback', 18.0)))  # S'assurer que >= 5.0
                     default_min_gain = float(current_config.get('constraint_min_consumer_gain_pct', 5.0))
 
                     col_c1, col_c2, col_c3 = st.columns(3)
