@@ -16,16 +16,27 @@ st.set_page_config(
     page_icon="☀️", layout="wide", initial_sidebar_state="expanded"
 )
 
-# CSS pour masquer le menu hamburger (3 points)
+# CSS pour masquer le menu hamburger et les boutons en haut à droite
 hide_menu_style = """
 <style>
     #MainMenu {visibility: hidden;}
     .stDeployButton {display:none;}
     footer {visibility: hidden;}
     #stDecoration {display:none;}
+
+    /* Masquer les boutons Share, GitHub, etc. */
+    header[data-testid="stHeader"] > div:first-child > div:last-child {
+        display: none;
+    }
+    .stActionButton {display:none;}
+    button[kind="header"] {display:none;}
+    div[data-testid="stToolbar"] {display:none;}
+
+    /* Alternative: masquer toute la zone des boutons */
+    section[data-testid="stHeader"] button {display:none;}
 </style>
 """
-# st.markdown(hide_menu_style, unsafe_allow_html=True)  # Temporairement désactivé pour accéder au clear cache
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
 # Ajouter le chemin du dossier 'modules' au path Python
