@@ -124,6 +124,34 @@ pip install -r requirements.txt
 
 ## Development Guidelines
 
+### MCP and Context7 Usage
+
+**IMPORTANT: Always prioritize MCP tools with Context7 for documentation lookup**
+
+When you need documentation or code examples:
+1. **Use Context7 MCP first** - For established libraries (Streamlit, NumPy, Pandas, etc.)
+   - Provides official documentation with code snippets
+   - More reliable and comprehensive than web search
+   - Example: `/streamlit/docs`, `/numpy/numpy`
+2. **Use WebSearch as fallback** - Only for:
+   - Very recent projects/releases (2024-2025)
+   - GitHub repositories not yet indexed
+   - Comparisons between multiple solutions
+   - News and announcements
+
+**Context7 Workflow:**
+```python
+# Step 1: Resolve library ID
+mcp__context7__resolve-library-id(libraryName="streamlit")
+
+# Step 2: Get documentation
+mcp__context7__get-library-docs(
+    context7CompatibleLibraryID="/streamlit/docs",
+    topic="specific feature or concept",
+    tokens=8000
+)
+```
+
 ### Module Structure
 
 When adding new features:

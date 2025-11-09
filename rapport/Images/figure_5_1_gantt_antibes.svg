@@ -1,0 +1,146 @@
+<svg viewBox="0 0 1400 520" xmlns="http://www.w3.org/2000/svg">
+  <!-- Définitions des styles -->
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: #1a1a1a; }
+      .header-text { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: start; fill: #333; }
+      .phase-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-anchor: start; fill: #333; }
+      .month-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-anchor: middle; fill: #555; }
+      .milestone-text { font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; text-anchor: middle; fill: #d32f2f; }
+      .duration-text { font-family: Arial, sans-serif; font-size: 9px; text-anchor: middle; fill: #666; }
+    </style>
+    
+    <!-- Flèches pour jalons -->
+    <marker id="milestone" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <circle cx="4" cy="4" r="3" fill="#d32f2f" stroke="#fff" stroke-width="1"/>
+    </marker>
+  </defs>
+
+  <!-- Fond blanc -->
+  <rect width="100%" height="100%" fill="white"/>
+  
+  <!-- Titre principal -->
+  <rect x="50" y="20" width="1300" height="40" fill="#f5f5f5" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="700" y="45" class="title-text">Planning Projet Antibes - 10 mois (201,6 kWc - 448 panneaux - 269 MWh/an)</text>
+
+  <!-- En-têtes des mois -->
+  <rect x="250" y="80" width="1100" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+  <text x="50" y="100" class="header-text">PHASES</text>
+  
+  <!-- Colonnes des mois avec dates -->
+  <g id="months-header">
+    <text x="300" y="95" class="month-text">M1</text>
+    <text x="300" y="110" class="duration-text">Sep 2025</text>
+    <text x="410" y="95" class="month-text">M2</text>
+    <text x="410" y="110" class="duration-text">Oct 2025</text>
+    <text x="520" y="95" class="month-text">M3</text>
+    <text x="520" y="110" class="duration-text">Nov 2025</text>
+    <text x="630" y="95" class="month-text">M4</text>
+    <text x="630" y="110" class="duration-text">Déc 2025</text>
+    <text x="740" y="95" class="month-text">M5</text>
+    <text x="740" y="110" class="duration-text">Jan 2026</text>
+    <text x="850" y="95" class="month-text">M6</text>
+    <text x="850" y="110" class="duration-text">Fév 2026</text>
+    <text x="960" y="95" class="month-text">M7</text>
+    <text x="960" y="110" class="duration-text">Mar 2026</text>
+    <text x="1070" y="95" class="month-text">M8</text>
+    <text x="1070" y="110" class="duration-text">Avr 2026</text>
+    <text x="1180" y="95" class="month-text">M9</text>
+    <text x="1180" y="110" class="duration-text">Mai 2026</text>
+    <text x="1290" y="95" class="month-text">M10</text>
+    <text x="1290" y="110" class="duration-text">Jun 2026</text>
+  </g>
+
+  <!-- Lignes verticales pour séparer les mois -->
+  <g stroke="#ddd" stroke-width="1">
+    <line x1="360" y1="80" x2="360" y2="500"/>
+    <line x1="470" y1="80" x2="470" y2="500"/>
+    <line x1="580" y1="80" x2="580" y2="500"/>
+    <line x1="690" y1="80" x2="690" y2="500"/>
+    <line x1="800" y1="80" x2="800" y2="500"/>
+    <line x1="910" y1="80" x2="910" y2="500"/>
+    <line x1="1020" y1="80" x2="1020" y2="500"/>
+    <line x1="1130" y1="80" x2="1130" y2="500"/>
+    <line x1="1240" y1="80" x2="1240" y2="500"/>
+    <line x1="1350" y1="80" x2="1350" y2="500"/>
+  </g>
+
+  <!-- PHASE 1: ÉTUDE TECHNICO-ÉCONOMIQUE -->
+  <g transform="translate(0, 150)">
+    <rect x="250" y="0" width="220" height="40" fill="#e8f5e8" stroke="#4caf50" stroke-width="2" rx="3"/>
+    <text x="50" y="25" class="phase-text">Phase 1 - Études</text>
+    <text x="360" y="15" class="duration-text">Étude OptimPV + Dimensionnement</text>
+    <text x="360" y="30" class="duration-text">Sep-Oct 2025</text>
+  </g>
+
+  <!-- PHASE 2: MONTAGE JURIDIQUE -->
+  <g transform="translate(0, 210)">
+    <rect x="470" y="0" width="220" height="40" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="3"/>
+    <text x="50" y="25" class="phase-text">Phase 2 - Juridique</text>
+    <text x="580" y="15" class="duration-text">Bail emphytéotique + Administratif</text>
+    <text x="580" y="30" class="duration-text">Nov-Déc 2025</text>
+  </g>
+
+  <!-- PHASE 3: CONSULTATION -->
+  <g transform="translate(0, 270)">
+    <rect x="690" y="0" width="220" height="40" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="3"/>
+    <text x="50" y="25" class="phase-text">Phase 3 - Consultation</text>
+    <text x="800" y="15" class="duration-text">Entreprises + Négociation</text>
+    <text x="800" y="30" class="duration-text">Jan-Fév 2026</text>
+  </g>
+
+  <!-- PHASE 4: CONSTRUCTION -->
+  <g transform="translate(0, 330)">
+    <rect x="910" y="0" width="330" height="40" fill="#ffebee" stroke="#f44336" stroke-width="2" rx="3"/>
+    <text x="50" y="25" class="phase-text">Phase 4 - Construction</text>
+    <text x="1075" y="15" class="duration-text">Installation 448 panneaux (1350h - équipe 3 pers.)</text>
+    <text x="1075" y="30" class="duration-text">Mar-Mai 2026</text>
+  </g>
+
+  <!-- PHASE 5: MISE EN SERVICE -->
+  <g transform="translate(0, 390)">
+    <rect x="1240" y="0" width="110" height="40" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2" rx="3"/>
+    <text x="50" y="25" class="phase-text">Phase 5 - Mise en service</text>
+    <text x="1295" y="15" class="duration-text">Raccordement</text>
+    <text x="1295" y="30" class="duration-text">Jun 2026</text>
+  </g>
+
+  <!-- JALONS CRITIQUES -->
+  <g id="milestones">
+    <!-- Jalon Fév: Validation OptimPV -->
+    <circle cx="470" cy="460" r="6" fill="#d32f2f" stroke="#fff" stroke-width="2"/>
+    <text x="470" y="480" class="milestone-text">Validation</text>
+    <text x="470" y="495" class="milestone-text">OptimPV</text>
+    
+    <!-- Jalon Avr: Signature bail -->
+    <circle cx="690" cy="460" r="6" fill="#d32f2f" stroke="#fff" stroke-width="2"/>
+    <text x="690" y="480" class="milestone-text">Signature</text>
+    <text x="690" y="495" class="milestone-text">Bail</text>
+    
+    <!-- Jalon Jun: Attribution marché -->
+    <circle cx="910" cy="460" r="6" fill="#d32f2f" stroke="#fff" stroke-width="2"/>
+    <text x="910" y="480" class="milestone-text">Attribution</text>
+    <text x="910" y="495" class="milestone-text">Marché</text>
+    
+    <!-- Jalon Sep: Fin construction -->
+    <circle cx="1240" cy="460" r="6" fill="#d32f2f" stroke="#fff" stroke-width="2"/>
+    <text x="1240" y="480" class="milestone-text">Fin</text>
+    <text x="1240" y="495" class="milestone-text">Construction</text>
+    
+    <!-- Jalon Oct: Validation performance -->
+    <circle cx="1350" cy="460" r="6" fill="#d32f2f" stroke="#fff" stroke-width="2"/>
+    <text x="1350" y="480" class="milestone-text">Mise en</text>
+    <text x="1350" y="495" class="milestone-text">Service</text>
+  </g>
+
+  <!-- CHEVAUCHEMENTS (flèches pointillées) -->
+  <g stroke="#666" stroke-width="1" stroke-dasharray="5,5" fill="none">
+    <!-- Juridique commence avant fin études -->
+    <path d="M 450 230 Q 460 200 470 210" marker-end="url(#milestone)"/>
+    <!-- Consultation commence avant signature bail -->
+    <path d="M 670 290 Q 680 260 690 270" marker-end="url(#milestone)"/>
+  </g>
+
+  <!-- Bordure générale -->
+  <rect x="30" y="10" width="1340" height="500" fill="none" stroke="#333" stroke-width="2" rx="10"/>
+</svg>

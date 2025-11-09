@@ -25,7 +25,7 @@ hide_menu_style = """
     #stDecoration {display:none;}
 </style>
 """
-st.markdown(hide_menu_style, unsafe_allow_html=True)
+# st.markdown(hide_menu_style, unsafe_allow_html=True)  # Temporairement désactivé pour accéder au clear cache
 
 
 # Ajouter le chemin du dossier 'modules' au path Python

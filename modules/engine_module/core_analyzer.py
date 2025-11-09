@@ -1356,10 +1356,14 @@ class AnalysisEngine:
             )
             if lcoe is None: lcoe = np.nan # S'assurer que c'est NaN si le calcul échoue
             
-            # Taux Autoconsommation / Autoproduction Globaux
-            total_production_an = monthly_results_df['Production_kWh'].sum()
-            total_autocons_an = monthly_results_df['Autoconsommation_kWh'].sum()
-            total_cons_an = monthly_results_df['Consommation_kWh'].sum()
+            # Taux Autoconsommation / Autoproduction Globaux (MOYENNE ANNUELLE)
+            # Utilisation des durées de configuration pour cohérence avec le reste du moteur
+            duree_totale_mois = duree_construction_cfg + duree_exploitation_cfg
+            duree_totale_annees = duree_totale_mois / 12.0
+            
+            total_production_an = monthly_results_df['Production_kWh'].sum() / duree_totale_annees
+            total_autocons_an = monthly_results_df['Autoconsommation_kWh'].sum() / duree_totale_annees
+            total_cons_an = monthly_results_df['Consommation_kWh'].sum() / duree_totale_annees
             autoconsumption_rate = total_autocons_an / total_cons_an if total_cons_an > 1e-6 else 0.0
             autoproduction_rate = total_autocons_an / total_production_an if total_production_an > 1e-6 else 0.0
 

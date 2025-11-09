@@ -1,0 +1,212 @@
+<svg viewBox="50 50 1100 620" xmlns="http://www.w3.org/2000/svg">
+  <!-- Styles -->
+  <defs>
+    <style>
+      .timeline-text { font-family: "Times New Roman", Times, serif; font-size: 11px; fill: #2c3e50; }
+      .year-text { font-family: "Times New Roman", Times, serif; font-size: 14px; font-weight: bold; fill: #34495e; }
+      .event-text { font-family: "Times New Roman", Times, serif; font-size: 9px; fill: #2c3e50; }
+      .phase-text { font-family: "Times New Roman", Times, serif; font-size: 10px; font-weight: bold; fill: #8b4513; }
+      .timeline-line { stroke: #34495e; stroke-width: 2; }
+      .event-line { stroke: #7f8c8d; stroke-width: 1; }
+      .event-dot { fill: #3498db; }
+      .phase-bg { fill: #f8f9fa; stroke: #e9ecef; stroke-width: 1; opacity: 0.8; }
+    </style>
+  </defs>
+
+  <!-- Titre -->
+  <text x="600" y="120" text-anchor="middle" class="year-text" font-size="16">
+    Évolution de la Réglementation sur l'Autoconsommation Collective (2016-2025)
+  </text>
+
+  <!-- Ligne temporelle principale -->
+  <line x1="120" y1="400" x2="980" y2="400" class="timeline-line"/>
+
+  <!-- Phases de fond -->
+  <!-- Phase 1: 2016-2017 -->
+  <rect x="100" y="200" width="200" height="400" class="phase-bg"/>
+  <text x="200" y="220" text-anchor="middle" class="phase-text">Phase 1: Instauration (2016-2017)</text>
+  
+  <!-- Phase 2: 2018-2019 -->
+  <rect x="300" y="200" width="200" height="400" class="phase-bg"/>
+  <text x="400" y="220" text-anchor="middle" class="phase-text">Phase 2: Assouplissement (2018-2019)</text>
+  
+  <!-- Phase 3: 2020-2021 -->
+  <rect x="500" y="200" width="150" height="400" class="phase-bg"/>
+  <text x="575" y="220" text-anchor="middle" class="phase-text">Phase 3: Consolidation (2020-2021)</text>
+  
+  <!-- Phase 4: 2023-2024 -->
+  <rect x="650" y="200" width="200" height="400" class="phase-bg"/>
+  <text x="750" y="220" text-anchor="middle" class="phase-text">Phase 4: Accélération (2023-2024)</text>
+  
+  <!-- Phase 5: 2025 -->
+  <rect x="850" y="200" width="150" height="400" class="phase-bg"/>
+  <text x="925" y="220" text-anchor="middle" class="phase-text">Phase 5: Changement d'échelle (2025)</text>
+
+  <!-- Années sur la timeline -->
+  <g>
+    <line x1="150" y1="395" x2="150" y2="405" class="timeline-line"/>
+    <text x="150" y="420" text-anchor="middle" class="year-text">2016</text>
+    
+    <line x1="250" y1="395" x2="250" y2="405" class="timeline-line"/>
+    <text x="250" y="420" text-anchor="middle" class="year-text">2017</text>
+    
+    <line x1="350" y1="395" x2="350" y2="405" class="timeline-line"/>
+    <text x="350" y="420" text-anchor="middle" class="year-text">2018</text>
+    
+    <line x1="450" y1="395" x2="450" y2="405" class="timeline-line"/>
+    <text x="450" y="420" text-anchor="middle" class="year-text">2019</text>
+    
+    <line x1="550" y1="395" x2="550" y2="405" class="timeline-line"/>
+    <text x="550" y="420" text-anchor="middle" class="year-text">2020</text>
+    
+    <line x1="625" y1="395" x2="625" y2="405" class="timeline-line"/>
+    <text x="625" y="420" text-anchor="middle" class="year-text">2021</text>
+    
+    <line x1="700" y1="395" x2="700" y2="405" class="timeline-line"/>
+    <text x="700" y="420" text-anchor="middle" class="year-text">2023</text>
+    
+    <line x1="800" y1="395" x2="800" y2="405" class="timeline-line"/>
+    <text x="800" y="420" text-anchor="middle" class="year-text">2024</text>
+    
+    <line x1="900" y1="395" x2="900" y2="405" class="timeline-line"/>
+    <text x="900" y="420" text-anchor="middle" class="year-text">2025</text>
+  </g>
+
+  <!-- Événements 2016 -->
+  <g>
+    <!-- Délibération CRE juillet - EN HAUT -->
+    <line x1="140" y1="400" x2="140" y2="360" class="event-line"/>
+    <circle cx="140" cy="400" r="3" class="event-dot"/>
+    <text x="140" y="350" text-anchor="middle" class="event-text">13/07/2016</text>
+    <text x="140" y="338" text-anchor="middle" class="event-text">Délibération CRE</text>
+    <text x="140" y="326" text-anchor="middle" class="event-text">PMO + antenne BT</text>
+    
+    <!-- Ordonnance juillet - EN BAS -->
+    <line x1="160" y1="400" x2="160" y2="490" class="event-line"/>
+    <circle cx="160" cy="400" r="3" class="event-dot"/>
+    <text x="160" y="500" text-anchor="middle" class="event-text">27/07/2016</text>
+    <text x="160" y="512" text-anchor="middle" class="event-text">Ordonnance n°2016-1019</text>
+    <text x="160" y="524" text-anchor="middle" class="event-text">Création du cadre juridique</text>
+  </g>
+
+  <!-- Événements 2017 -->
+  <g>
+    <!-- EN HAUT -->
+    <line x1="250" y1="400" x2="250" y2="360" class="event-line"/>
+    <circle cx="250" cy="400" r="3" class="event-dot"/>
+    <text x="250" y="350" text-anchor="middle" class="event-text">24/02/2017</text>
+    <text x="250" y="338" text-anchor="middle" class="event-text">Loi n°2017-227</text>
+    <text x="250" y="326" text-anchor="middle" class="event-text">Extension au poste</text>
+    <text x="250" y="314" text-anchor="middle" class="event-text">de transformation</text>
+  </g>
+
+  <!-- Événements 2018 -->
+  <g>
+    <!-- EN BAS -->
+    <line x1="350" y1="400" x2="350" y2="440" class="event-line"/>
+    <circle cx="350" cy="400" r="3" class="event-dot"/>
+    <text x="350" y="450" text-anchor="middle" class="event-text">15/02/2018</text>
+    <text x="350" y="462" text-anchor="middle" class="event-text">Délibération CRE</text>
+    <text x="350" y="474" text-anchor="middle" class="event-text">Constat des difficultés</text>
+  </g>
+
+  <!-- Événements 2019 -->
+  <g>
+    <!-- Loi PACTE - EN HAUT -->
+    <line x1="430" y1="400" x2="430" y2="360" class="event-line"/>
+    <circle cx="430" cy="400" r="3" class="event-dot"/>
+    <text x="430" y="350" text-anchor="middle" class="event-text">22/05/2019</text>
+    <text x="430" y="338" text-anchor="middle" class="event-text">Loi PACTE</text>
+    <text x="430" y="326" text-anchor="middle" class="event-text">Périmètre étendu</text>
+    
+    <!-- Loi Énergie et Climat - EN BAS -->
+    <line x1="470" y1="400" x2="470" y2="490" class="event-line"/>
+    <circle cx="470" cy="400" r="3" class="event-dot"/>
+    <text x="470" y="500" text-anchor="middle" class="event-text">08/11/2019</text>
+    <text x="470" y="512" text-anchor="middle" class="event-text">Loi Énergie et Climat</text>
+    <text x="470" y="524" text-anchor="middle" class="event-text">Bailleurs sociaux PMO</text>
+    <text x="470" y="536" text-anchor="middle" class="event-text">Proximité géographique</text>
+  </g>
+
+  <!-- Événements 2020 -->
+  <g>
+    <!-- EN HAUT -->
+    <line x1="550" y1="400" x2="550" y2="360" class="event-line"/>
+    <circle cx="550" cy="400" r="3" class="event-dot"/>
+    <text x="550" y="350" text-anchor="middle" class="event-text">11/06/2020</text>
+    <text x="550" y="338" text-anchor="middle" class="event-text">Délibération CRE</text>
+    <text x="550" y="326" text-anchor="middle" class="event-text">Critères objectifs</text>
+    <text x="550" y="314" text-anchor="middle" class="event-text">pour dérogations</text>
+  </g>
+
+  <!-- Événements 2021 -->
+  <g>
+    <!-- EN BAS -->
+    <line x1="625" y1="400" x2="625" y2="440" class="event-line"/>
+    <circle cx="625" cy="400" r="3" class="event-dot"/>
+    <text x="625" y="450" text-anchor="middle" class="event-text">Juillet-Août 2021</text>
+    <text x="625" y="462" text-anchor="middle" class="event-text">Loi Climat &amp; Résilience</text>
+    <text x="625" y="474" text-anchor="middle" class="event-text">Opérationnalisation</text>
+    <text x="625" y="486" text-anchor="middle" class="event-text">bailleurs sociaux</text>
+  </g>
+
+  <!-- Événements 2023 -->
+  <g>
+    <!-- EN HAUT -->
+    <line x1="700" y1="400" x2="700" y2="360" class="event-line"/>
+    <circle cx="700" cy="400" r="3" class="event-dot"/>
+    <text x="700" y="350" text-anchor="middle" class="event-text">10/03/2023</text>
+    <text x="700" y="338" text-anchor="middle" class="event-text">Loi APER</text>
+    <text x="700" y="326" text-anchor="middle" class="event-text">Zones d'accélération</text>
+  </g>
+
+  <!-- Événements 2024 -->
+  <g>
+    <!-- Décrets gaz - EN BAS -->
+    <line x1="780" y1="400" x2="780" y2="440" class="event-line"/>
+    <circle cx="780" cy="400" r="3" class="event-dot"/>
+    <text x="780" y="450" text-anchor="middle" class="event-text">29/03/2024</text>
+    <text x="780" y="462" text-anchor="middle" class="event-text">Décrets ACC gaz</text>
+    <text x="780" y="474" text-anchor="middle" class="event-text">Périmètre 2 km</text>
+    
+    <!-- Arrêté collectivités - EN HAUT -->
+    <line x1="820" y1="400" x2="820" y2="360" class="event-line"/>
+    <circle cx="820" cy="400" r="3" class="event-dot"/>
+    <text x="820" y="350" text-anchor="middle" class="event-text">10/07/2024</text>
+    <text x="820" y="338" text-anchor="middle" class="event-text">Arrêté collectivités</text>
+    <text x="820" y="326" text-anchor="middle" class="event-text">Exemption régie</text>
+    <text x="820" y="314" text-anchor="middle" class="event-text">&lt; 1 MW</text>
+  </g>
+
+  <!-- Événements 2025 -->
+  <g>
+    <!-- Loi de finances - EN BAS -->
+    <line x1="880" y1="400" x2="880" y2="440" class="event-line"/>
+    <circle cx="880" cy="400" r="3" class="event-dot"/>
+    <text x="880" y="450" text-anchor="middle" class="event-text">01/01/2025</text>
+    <text x="880" y="462" text-anchor="middle" class="event-text">Loi de Finances</text>
+    <text x="880" y="474" text-anchor="middle" class="event-text">Exonération accise</text>
+    <text x="880" y="486" text-anchor="middle" class="event-text">&lt; 1 MW</text>
+    
+    <!-- Arrêté périmètre - EN HAUT -->
+    <line x1="920" y1="400" x2="920" y2="360" class="event-line"/>
+    <circle cx="920" cy="400" r="3" class="event-dot"/>
+    <text x="920" y="350" text-anchor="middle" class="event-text">21/02/2025</text>
+    <text x="920" y="338" text-anchor="middle" class="event-text">Arrêté périmètre</text>
+    <text x="920" y="326" text-anchor="middle" class="event-text">5 MW (10 MW publics)</text>
+    <text x="920" y="314" text-anchor="middle" class="event-text">Échelle EPCI</text>
+  </g>
+
+  <!-- Légendes -->
+  <g transform="translate(100, 620)">
+    <text x="0" y="0" class="timeline-text" font-weight="bold">Légende :</text>
+    <circle cx="0" cy="15" r="3" class="event-dot"/>
+    <text x="10" y="20" class="event-text">Événement réglementaire</text>
+    
+    <text x="150" y="0" class="timeline-text" font-weight="bold">Évolution des critères :</text>
+    <text x="150" y="15" class="event-text">• Gouvernance : PMO → Bailleurs sociaux → Collectivités</text>
+    <text x="150" y="30" class="event-text">• Périmètre : Antenne BT → Poste transfo → Proximité géographique → EPCI</text>
+    <text x="150" y="45" class="event-text">• Puissance : 3 MW → 5 MW (10 MW pour acteurs publics)</text>
+  </g>
+
+</svg>

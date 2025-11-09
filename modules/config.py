@@ -109,7 +109,7 @@ class ConfigModule:
             "debt_ratio": 0.80,
             "taux_interet_dette": 4.0,
             "debt_term_years": 20,
-            "target_dscr": 1.2,
+            "target_dscr": 1.5,
             "taux_interet_shl": 4.0, # Gardé ici pour l'instant
             "shl_blocage_period": 60,
             "dividends_blocage_period": 60,
@@ -129,15 +129,21 @@ class ConfigModule:
             "pvs_avoided_cost_tariff": 0.2218,
 
             # --- Paramètres Optimisation & MC (Globaux) ---
-            "constraint_min_project_irr_pct": 8.0,
-            "constraint_max_payback": 18.0,
+            "constraint_min_project_irr_pct": 15.0,  # Rehaussé pour réalisme
+            "constraint_max_payback": 4.5,           # Réduit - payback equity restrictif  
+            "target_dscr": 2.2,                      # Rehaussé - standard bancaire élevé
             "constraint_min_consumer_gain_pct": 5.0,
             "prix_min_revente": 0.05,
             "prix_max_revente": 0.40,
             "pas_optimisation": 0.001,
             "nb_iterations_monte_carlo": 1000,
-            "ecart_type_production": 10.0,
-            "ecart_type_consommation": 5.0,
+            "ecart_type_production": 8.0,         # ±8% PACA climat stable (PVGIS)
+            "inflation_annuelle_pct": 2.5,        # Inflation INSEE
+            "degradation_panneaux_pct": 0.6,      # 0.6%/an dégradation IEA
+            "risque_defaillance_pct": 0.2,        # 0.2%/an probabilité panne
+            "volatilite_tarif_edf_pct": 15.0,     # Volatilité régulée
+            "ecart_type_consommation": 15.0,      # ±15% usage bâtiment ADEME
+            "ecart_type_prix_electricite": 20.0,  # ±20% marché régulé CRE
 
             # --- Paramètres Gestion de Trésorerie et Placements (SIMPLIFIÉ) ---
             "placement_tresorerie_active": False,  # Activer la gestion des placements
@@ -870,15 +876,15 @@ class ConfigModule:
              "subvention_calculee": 0.0, "turpe_prod_tension": "BT<=36kVA", "turpe_prod_contrat": "Unique",
              "turpe_prod_calculee": 0.0, "turpe_indexe_inflation": True, "cout_fonds_propres": 8.0,
              "with_loan": True, "debt_ratio": 0.80, "taux_interet_dette": 4.0, "debt_term_years": 20,
-             "target_dscr": 1.2, "taux_interet_shl": 4.0, "shl_blocage_period": 60,
+             "target_dscr": 1.5, "taux_interet_shl": 4.0, "shl_blocage_period": 60,
              "dividends_blocage_period": 60, "capitalize_construction_interest": True,
              "opex_method": "auto", "opex_percent": 1.5,
              "opex_per_kwc": 20.0,
              "pvs_feed_in_tariff": 0.1108, "pvs_avoided_cost_tariff": 0.2218,
-             "constraint_min_project_irr_pct": 8.0, "constraint_max_payback": 18.0,
+             "constraint_min_project_irr_pct": 10.0, "constraint_max_payback": 10.0,
              "constraint_min_consumer_gain_pct": 5.0, "prix_min_revente": 0.05, "prix_max_revente": 0.40,
-             "pas_optimisation": 0.001, "nb_iterations_monte_carlo": 1000, "ecart_type_production": 10.0,
-             "ecart_type_consommation": 5.0,
+             "pas_optimisation": 0.001, "nb_iterations_monte_carlo": 1000, "ecart_type_production": 35.0,
+             "ecart_type_consommation": 30.0, "ecart_type_prix_electricite": 20.0,
         }
 
         config_changed = False

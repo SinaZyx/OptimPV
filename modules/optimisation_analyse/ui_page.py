@@ -493,18 +493,92 @@ def display_analysis_optimisation_section(scenario_name: str):
                           st.caption("Lancez une simulation Monte Carlo pour évaluer l'impact des aléas au prix optimal.")
                           
                           # Nouveau: Contrôle du nombre d'itérations
-                          col_mc1, col_mc2 = st.columns([1, 2])
-                          with col_mc1:
-                              n_iterations_mc_ui = st.slider(
-                                  "Nombre d'itérations:", 
-                                  min_value=50, 
-                                  max_value=1000, 
-                                  value=int(st.session_state.config.get('nb_iterations_monte_carlo', 200)),
-                                  step=50,
-                                  key=f"mc_iterations_slider_{scenario_name}"
+                          n_iterations_mc_ui = st.slider(
+                              "Nombre d'itérations:", 
+                              min_value=50, 
+                              max_value=1000, 
+                              value=int(st.session_state.config.get('nb_iterations_monte_carlo', 200)),
+                              step=50,
+                              key=f"mc_iterations_slider_{scenario_name}"
+                          )
+                          
+                          # Paramètres de variation Monte Carlo (visibles pour l'utilisateur)
+                          st.write("**⚙️ Paramètres de variation aléatoire:**")
+                          col_var1, col_var2, col_var3 = st.columns(3)
+                          
+                          with col_var1:
+                              ecart_prod = st.number_input(
+                                  "Production (%)", 
+                                  min_value=1.0, max_value=30.0,
+                                  value=float(st.session_state.config.get('ecart_type_production', 8.0)),
+                                  step=1.0, format="%.1f",
+                                  key=f"mc_prod_var_{scenario_name}",
+                                  help="Variabilité production solaire (climat, ombrage)"
                               )
-                          with col_mc2:
-                              st.caption("⚠️ **Note**: Un nombre élevé d'itérations améliore la précision mais augmente considérablement le temps de calcul.")
+                              
+                              surcout_capex = st.number_input(
+                                  "Surcoût CAPEX (%)",
+                                  min_value=1.0, max_value=50.0,
+                                  value=float(st.session_state.config.get('variabilite_capex', 15.0)),
+                                  step=1.0, format="%.1f", 
+                                  key=f"mc_capex_var_{scenario_name}",
+                                  help="Dépassements CAPEX (aléas chantier, matériaux)"
+                              )
+                          
+                          with col_var2:
+                              ecart_conso = st.number_input(
+                                  "Consommation (%)",
+                                  min_value=1.0, max_value=50.0, 
+                                  value=float(st.session_state.config.get('ecart_type_consommation', 15.0)),
+                                  step=1.0, format="%.1f",
+                                  key=f"mc_conso_var_{scenario_name}",
+                                  help="Variabilité consommation électrique"
+                              )
+                              
+                              surcout_maintenance = st.number_input(
+                                  "Surcoût Maintenance (%)",
+                                  min_value=1.0, max_value=100.0,
+                                  value=float(st.session_state.config.get('variabilite_maintenance', 25.0)),
+                                  step=1.0, format="%.1f",
+                                  key=f"mc_maintenance_var_{scenario_name}",
+                                  help="Variabilité coûts maintenance (pannes, nettoyage)"
+                              )
+                              
+                          with col_var3:
+                              ecart_prix = st.number_input(
+                                  "Prix électricité (%)",
+                                  min_value=1.0, max_value=50.0,
+                                  value=float(st.session_state.config.get('ecart_type_prix_electricite', 20.0)), 
+                                  step=1.0, format="%.1f",
+                                  key=f"mc_prix_var_{scenario_name}",
+                                  help="Volatilité prix de l'électricité"
+                              )
+                              
+                              degradation_panneaux = st.number_input(
+                                  "Dégradation panneaux (%/an)",
+                                  min_value=0.1, max_value=2.0,
+                                  value=float(st.session_state.config.get('variabilite_degradation', 0.6)),
+                                  step=0.1, format="%.1f",
+                                  key=f"mc_degradation_var_{scenario_name}",
+                                  help="Variabilité dégradation annuelle des panneaux"
+                              )
+
+                          # Section contraintes
+                          st.write("**🎯 Contraintes (synchronisées avec l'optimisation):**") 
+                          current_config = st.session_state.config
+                          tri_min = current_config.get('constraint_min_irr_pct', 8.0)
+                          payback_max = current_config.get('constraint_max_payback', 18.0)
+                          gain_min = current_config.get('constraint_min_consumer_gain_pct', 5.0)
+                          
+                          col_constr1, col_constr2 = st.columns(2)
+                          with col_constr1:
+                              st.caption(f"• TRI Projet ≥ **{tri_min}%**")
+                              st.caption(f"• Payback Equity ≤ **{payback_max} ans**")
+                          with col_constr2:
+                              st.caption(f"• Gain Client ≥ **{gain_min}%**")
+                              st.caption(f"• DSCR ≥ **1.2** (contrainte technique)")
+                              
+                          st.caption("⚠️ **Note**: Un nombre élevé d'itérations améliore la précision mais augmente le temps de calcul.")
                               
                           if st.button(f"Lancer Simulation Monte Carlo{key_suffix}", key=f"btn_mc{key_suffix}_tab1"):
                                 with st.spinner("Simulation Monte Carlo..."):
@@ -516,9 +590,18 @@ def display_analysis_optimisation_section(scenario_name: str):
                                             sites_data=st.session_state.sites_data
                                         )
                                         
-                                        # Utiliser le nombre d'itérations choisi par l'utilisateur
+                                        # Utiliser tous les paramètres choisis par l'utilisateur
                                         config_mc_custom = st.session_state.config.copy()
                                         config_mc_custom['nb_iterations_monte_carlo'] = n_iterations_mc_ui
+                                        config_mc_custom['ecart_type_production'] = st.session_state[f"mc_prod_var_{scenario_name}"]
+                                        config_mc_custom['ecart_type_consommation'] = st.session_state[f"mc_conso_var_{scenario_name}"]
+                                        config_mc_custom['ecart_type_prix_electricite'] = st.session_state[f"mc_prix_var_{scenario_name}"]
+                                        config_mc_custom['variabilite_capex'] = st.session_state[f"mc_capex_var_{scenario_name}"]
+                                        config_mc_custom['variabilite_maintenance'] = st.session_state[f"mc_maintenance_var_{scenario_name}"]
+                                        config_mc_custom['variabilite_degradation'] = st.session_state[f"mc_degradation_var_{scenario_name}"]
+                                        
+                                        st.write(f"🔍 Paramètres MC: {n_iterations_mc_ui} iter - Prod±{config_mc_custom['ecart_type_production']}%, Conso±{config_mc_custom['ecart_type_consommation']}%, Prix±{config_mc_custom['ecart_type_prix_electricite']}%")
+                                        st.write(f"🔍 Surcoûts: CAPEX±{config_mc_custom['variabilite_capex']}%, Maintenance±{config_mc_custom['variabilite_maintenance']}%, Dégrad.±{config_mc_custom['variabilite_degradation']}%/an")
                                         
                                         # Instancier Optimizer avec l'instance de session_state et la config modifiée
                                         optimizer = OptimizationLogic(
@@ -558,15 +641,56 @@ def display_analysis_optimisation_section(scenario_name: str):
                                  dscr_cible_val = cons_mc.get('dscr_moyen_min', 'N/A')
                                  payback_cible_val = cons_mc.get('payback_max_equity_annees', 'N/A')
 
-                                 with col_p1: st.metric(f"P(DSCR ≥ {dscr_cible_val})", f"{prob_dscr:.1f}%")
-                                 with col_p2: st.metric(f"P(Payback Equity ≤ {payback_cible_val} ans)", f"{prob_payback:.1f}%")
-                                 with col_p3: st.metric("P(Succès Global)", f"{prob_global:.1f}%")
+                                 # Utilisation des variables existantes pour les métriques
+                                 prob_irr_project = probs.get('irr_project', 0) * 100 if probs else 0
+                                 prob_payback_project = probs.get('payback_project', 0) * 100 if probs else 0
+                                 
+                                 # Seuils dynamiques depuis la configuration
+                                 tri_seuil = st.session_state.config.get('constraint_min_irr_pct', 8.0)
+                                 payback_seuil = 8.0  # Seuil pour payback projet (distinct de equity)
+                                 
+                                 with col_p1: st.metric(f"🏭 P(TRI Projet ≥ {tri_seuil}%)", f"{prob_irr_project:.1f}%")
+                                 with col_p2: st.metric(f"⏰ P(Payback Projet ≤ {payback_seuil} ans)", f"{prob_payback_project:.1f}%") 
+                                 with col_p3: st.metric("🎯 P(Projet Viable)", f"{prob_global:.1f}%")
 
                                  with st.expander("Voir statistiques détaillées"):
-                                    for k, v in stats_mc.items():
-                                         mean_val=v.get('mean',np.nan); std_val=v.get('std',np.nan); median_val=v.get('p',[np.nan]*5)[2]
-                                         mean_str=f"{mean_val:.2f}" if pd.notna(mean_val) else "N/A"; std_str=f"{std_val:.2f}" if pd.notna(std_val) else "N/A"; median_str=f"{median_val:.2f}" if pd.notna(median_val) else "N/A"
-                                         st.write(f"**{k.upper()}**: Moyenne={mean_str}, Ecart-type={std_str}, Médiane={median_str}")
+                                    st.write("**🏭 MÉTRIQUES PROJET (VIABILITÉ ÉCONOMIQUE):**")
+                                    project_metrics = ['irr_project', 'payback_project', 'lcoe']
+                                    for k in project_metrics:
+                                        if k in stats_mc:
+                                            v = stats_mc[k]
+                                            mean_val=v.get('mean',np.nan); std_val=v.get('std',np.nan); median_val=v.get('p',[np.nan]*5)[2]
+                                            ci_low, ci_high = v.get('confidence_interval', [np.nan, np.nan])
+                                            is_normal = v.get('is_normal', False)
+                                            
+                                            mean_str=f"{mean_val:.3f}" if pd.notna(mean_val) else "N/A"
+                                            std_str=f"{std_val:.3f}" if pd.notna(std_val) else "N/A"
+                                            ci_str = f"[{ci_low:.3f}, {ci_high:.3f}]" if pd.notna(ci_low) and pd.notna(ci_high) else "N/A"
+                                            normal_str = "✓" if is_normal else "✗"
+                                            
+                                            st.write(f"**{k.upper()}**: μ={mean_str}, σ={std_str}, IC95%={ci_str}, Normal={normal_str}")
+                                    
+                                    st.write("**💰 MÉTRIQUES OPÉRATEUR (BONUS FONDS PROPRES):**")
+                                    equity_metrics = ['roi', 'irr', 'npv', 'payback_period', 'avg_dscr']
+                                    for k in equity_metrics:
+                                        if k in stats_mc:
+                                            v = stats_mc[k]
+                                            mean_val=v.get('mean',np.nan); std_val=v.get('std',np.nan); median_val=v.get('p',[np.nan]*5)[2]
+                                            ci_low, ci_high = v.get('confidence_interval', [np.nan, np.nan])
+                                            is_normal = v.get('is_normal', False)
+                                            
+                                            mean_str=f"{mean_val:.3f}" if pd.notna(mean_val) else "N/A"
+                                            std_str=f"{std_val:.3f}" if pd.notna(std_val) else "N/A"
+                                            ci_str = f"[{ci_low:.3f}, {ci_high:.3f}]" if pd.notna(ci_low) and pd.notna(ci_high) else "N/A"
+                                            normal_str = "✓" if is_normal else "✗"
+                                            
+                                            st.write(f"**{k.upper()}**: μ={mean_str}, σ={std_str}, IC95%={ci_str}, Normal={normal_str}")
+                                        else:
+                                            st.write(f"**{k.upper()}**: Non calculé")
+                                    
+                                    st.write("**VALIDATION STATISTIQUE:**")
+                                    st.write("- μ: Moyenne, σ: Écart-type, IC95%: Intervalle confiance 95%")
+                                    st.write("- Normal: Test normalité Shapiro-Wilk (✓=normal, ✗=non-normal)")
                              else: st.info("Résultats Monte Carlo non disponibles.")
                  else:
                       st.info("Lancez l'optimisation et obtenez un prix optimal valide pour exécuter Monte Carlo.")
@@ -742,11 +866,13 @@ def display_analysis_optimisation_section(scenario_name: str):
                 total_auto=0.0; total_surp=0.0; total_prod=0.0
                 monthly_df_pie = results_dict_pie.get('monthly_data')
                 if isinstance(monthly_df_pie, pd.DataFrame) and not monthly_df_pie.empty:
-                    if 'Autoconsommation_kWh' in monthly_df_pie.columns: total_auto = monthly_df_pie['Autoconsommation_kWh'].sum()
-                    if 'Surplus_kWh' in monthly_df_pie.columns: total_surp = monthly_df_pie['Surplus_kWh'].sum()
+                    # Calcul de la moyenne annuelle (diviser par nombre d'années)
+                    duree_annees = len(monthly_df_pie) / 12.0
+                    if 'Autoconsommation_kWh' in monthly_df_pie.columns: total_auto = monthly_df_pie['Autoconsommation_kWh'].sum() / duree_annees
+                    if 'Surplus_kWh' in monthly_df_pie.columns: total_surp = monthly_df_pie['Surplus_kWh'].sum() / duree_annees
                     total_prod = total_auto + total_surp
                     if total_prod < 1e-6 and 'Production_kWh' in monthly_df_pie.columns: # Fallback si les deux sont nuls
-                         total_prod = monthly_df_pie['Production_kWh'].sum()
+                         total_prod = monthly_df_pie['Production_kWh'].sum() / duree_annees
                 
                 if total_prod > 1e-6:
                     pie_fig = create_autoconsommation_surplus_pie_chart(total_auto, total_surp)

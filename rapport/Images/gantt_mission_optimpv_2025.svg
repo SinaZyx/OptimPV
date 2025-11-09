@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Styles -->
+  <style>
+    .header { font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #2c3e50; }
+    .month { font-family: Arial, sans-serif; font-size: 11px; fill: #34495e; text-anchor: middle; }
+    .task-label { font-family: Arial, sans-serif; font-size: 12px; fill: #2c3e50; }
+    .phase1 { fill: #3498db; }
+    .phase2 { fill: #27ae60; }
+    .phase3 { fill: #e74c3c; }
+    .phase4 { fill: #f39c12; }
+    .phase5 { fill: #9b59b6; }
+    .milestone { fill: #e67e22; }
+    .grid-line { stroke: #bdc3c7; stroke-width: 0.5; }
+  </style>
+  
+  <!-- Titre -->
+  <text x="600" y="30" class="header" text-anchor="middle">GANTT - Mission OptimPV 2024-2025</text>
+  <text x="600" y="50" class="task-label" text-anchor="middle">Développement et validation d'une plateforme d'optimisation ACC</text>
+  
+  <!-- Grille temporelle -->
+  <g transform="translate(200,80)">
+    <!-- Mois -->
+    <text x="40" y="15" class="month">Sep 24</text>
+    <text x="120" y="15" class="month">Oct 24</text>
+    <text x="200" y="15" class="month">Nov 24</text>
+    <text x="280" y="15" class="month">Déc 24</text>
+    <text x="360" y="15" class="month">Jan 25</text>
+    <text x="440" y="15" class="month">Fév 25</text>
+    <text x="520" y="15" class="month">Mar 25</text>
+    <text x="600" y="15" class="month">Avr 25</text>
+    <text x="680" y="15" class="month">Mai 25</text>
+    <text x="760" y="15" class="month">Jun 25</text>
+    <text x="840" y="15" class="month">Jul 25</text>
+    <text x="920" y="15" class="month">Aoû 25</text>
+    <text x="1000" y="15" class="month">Sep 25</text>
+    
+    <!-- Lignes verticales -->
+    <line x1="0" y1="20" x2="0" y2="650" class="grid-line"/>
+    <line x1="80" y1="20" x2="80" y2="650" class="grid-line"/>
+    <line x1="160" y1="20" x2="160" y2="650" class="grid-line"/>
+    <line x1="240" y1="20" x2="240" y2="650" class="grid-line"/>
+    <line x1="320" y1="20" x2="320" y2="650" class="grid-line"/>
+    <line x1="400" y1="20" x2="400" y2="650" class="grid-line"/>
+    <line x1="480" y1="20" x2="480" y2="650" class="grid-line"/>
+    <line x1="560" y1="20" x2="560" y2="650" class="grid-line"/>
+    <line x1="640" y1="20" x2="640" y2="650" class="grid-line"/>
+    <line x1="720" y1="20" x2="720" y2="650" class="grid-line"/>
+    <line x1="800" y1="20" x2="800" y2="650" class="grid-line"/>
+    <line x1="880" y1="20" x2="880" y2="650" class="grid-line"/>
+    <line x1="960" y1="20" x2="960" y2="650" class="grid-line"/>
+    <line x1="1040" y1="20" x2="1040" y2="650" class="grid-line"/>
+  </g>
+  
+  <!-- Indicateur périodes entreprise -->
+  <text x="20" y="100" class="task-label" font-weight="bold" fill="#c0392b">Périodes en entreprise AMB:</text>
+  <rect x="160" y="85" width="40" height="10" fill="#c0392b" opacity="0.7"/>
+  <text x="210" y="95" class="task-label" font-size="10px">Nov 24 (2 sem)</text>
+  <rect x="240" y="85" width="40" height="10" fill="#c0392b" opacity="0.7"/>
+  <text x="290" y="95" class="task-label" font-size="10px">Déc 24 (2 sem)</text>
+  <rect x="400" y="85" width="40" height="10" fill="#c0392b" opacity="0.7"/>
+  <text x="450" y="95" class="task-label" font-size="10px">Fév 25 (2 sem)</text>
+  <rect x="560" y="85" width="480" height="10" fill="#c0392b" opacity="0.7"/>
+  <text x="800" y="95" class="task-label" font-size="10px">Avril-Septembre 2025 (full)</text>
+
+  <!-- Phase 1: Analyse et premiers contacts -->
+  <text x="20" y="130" class="task-label">Intégration service ENR AMB</text>
+  <rect x="160" y="115" width="40" height="20" class="phase1"/>
+  <text x="210" y="128" class="task-label" fill="white" font-size="10px">Nov 24</text>
+  
+  <text x="20" y="160" class="task-label">Analyse marché ACC français</text>
+  <rect x="240" y="145" width="40" height="20" class="phase1"/>
+  <text x="290" y="158" class="task-label" fill="white" font-size="10px">Déc 24</text>
+  
+  <!-- Phase école -->
+  <text x="20" y="190" class="task-label">Travail académique (école)</text>
+  <rect x="320" y="175" width="80" height="20" fill="#95a5a6"/>
+  <text x="370" y="188" class="task-label" fill="white" font-size="10px">Jan-Fév 25</text>
+  
+  <text x="20" y="220" class="task-label">Conception OptimPV (école)</text>
+  <rect x="400" y="205" width="40" height="20" class="phase1"/>
+  <text x="450" y="218" class="task-label" fill="white" font-size="10px">Fév 25</text>
+  
+  <!-- Phase 2: Développement intensif -->
+  <text x="20" y="250" class="task-label">Développement core OptimPV</text>
+  <rect x="560" y="235" width="120" height="20" class="phase2"/>
+  <text x="630" y="248" class="task-label" fill="white" font-size="11px">Avr-Mai 25</text>
+  
+  <text x="20" y="280" class="task-label">Interface Streamlit + modules</text>
+  <rect x="640" y="265" width="120" height="20" class="phase2"/>
+  <text x="710" y="278" class="task-label" fill="white" font-size="11px">Mai-Jun 25</text>
+  
+  <!-- Phase 3: Validation EPP -->
+  <text x="20" y="310" class="task-label">Contact Euro Plomberie-Piscine</text>
+  <rect x="680" y="295" width="40" height="20" class="phase3"/>
+  <text x="710" y="308" class="task-label" fill="white" font-size="10px">Jun 25</text>
+  
+  <text x="20" y="340" class="task-label">Étude faisabilité projet Antibes</text>
+  <rect x="720" y="325" width="80" height="20" class="phase3"/>
+  <text x="770" y="338" class="task-label" fill="white" font-size="11px">Jun-Jul 25</text>
+  
+  <text x="20" y="370" class="task-label">Validation OptimPV sur cas EPP</text>
+  <rect x="800" y="355" width="80" height="20" class="phase3"/>
+  <text x="850" y="368" class="task-label" fill="white" font-size="11px">Jul-Aoû 25</text>
+  
+  <!-- Phase 4: Analyses avancées -->
+  <text x="20" y="400" class="task-label">Analyse Monte Carlo (1000 iter.)</text>
+  <rect x="840" y="385" width="40" height="20" class="phase4"/>
+  <text x="870" y="398" class="task-label" fill="white" font-size="10px">Aoû 25</text>
+  
+  <text x="20" y="430" class="task-label">Montage juridique EaaS</text>
+  <rect x="880" y="415" width="40" height="20" class="phase4"/>
+  <text x="910" y="428" class="task-label" fill="white" font-size="10px">Aoû 25</text>
+  
+  <text x="20" y="460" class="task-label">Optimisation aides PACA</text>
+  <rect x="920" y="445" width="40" height="20" class="phase4"/>
+  <text x="950" y="458" class="task-label" fill="white" font-size="10px">Aoû 25</text>
+  
+  <!-- Phase 5: Finalisation -->
+  <text x="20" y="490" class="task-label">Rédaction thèse + perspectives</text>
+  <rect x="960" y="475" width="80" height="20" class="phase5"/>
+  <text x="1010" y="488" class="task-label" fill="white" font-size="11px">Aoû-Sep 25</text>
+  
+  <!-- Jalons importants (séparés des tâches) -->
+  <text x="20" y="540" class="task-label" font-weight="bold">Jalons critiques:</text>
+  
+  <!-- OptimPV V1.0 = Mai 25 = position 640 -->
+  <circle cx="640" cy="555" r="6" class="milestone"/>
+  <text x="650" y="570" class="task-label" font-size="10px">OptimPV V1.0</text>
+  
+  <!-- Accord EPP = Juin 25 = position 720 -->
+  <circle cx="720" cy="555" r="6" class="milestone"/>
+  <text x="730" y="570" class="task-label" font-size="10px">Accord EPP</text>
+  
+  <!-- Validation TRI = Juillet 25 = position 800 -->
+  <circle cx="800" cy="555" r="6" class="milestone"/>
+  <text x="810" y="570" class="task-label" font-size="10px">Validation TRI</text>
+  
+  <!-- Monte Carlo = Août 25 = position 880 -->
+  <circle cx="880" cy="555" r="6" class="milestone"/>
+  <text x="890" y="570" class="task-label" font-size="10px">Monte Carlo 72.7%</text>
+  
+  <!-- Soutenance = Septembre 25 = position 1000 -->
+  <circle cx="1000" cy="555" r="6" class="milestone"/>
+  <text x="1010" y="570" class="task-label" font-size="10px">Soutenance</text>
+  
+  <!-- Légende -->
+  <g transform="translate(50,680)">
+    <text x="0" y="15" class="task-label" font-weight="bold">Légende:</text>
+    <rect x="80" y="5" width="20" height="15" class="phase1"/>
+    <text x="110" y="17" class="task-label">Analyse &amp; Conception</text>
+    <rect x="250" y="5" width="20" height="15" class="phase2"/>
+    <text x="280" y="17" class="task-label">Développement</text>
+    <rect x="380" y="5" width="20" height="15" class="phase3"/>
+    <text x="410" y="17" class="task-label">Validation EPP</text>
+    <rect x="510" y="5" width="20" height="15" class="phase4"/>
+    <text x="540" y="17" class="task-label">Optimisation</text>
+    <rect x="640" y="5" width="20" height="15" class="phase5"/>
+    <text x="670" y="17" class="task-label">Finalisation</text>
+    <circle cx="770" cy="12" r="6" class="milestone"/>
+    <text x="785" y="17" class="task-label">Jalons</text>
+  </g>
+</svg>

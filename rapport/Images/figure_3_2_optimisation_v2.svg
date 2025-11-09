@@ -1,0 +1,182 @@
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Définitions des styles -->
+  <defs>
+    <style>
+      .title-text { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-anchor: middle; fill: #1a1a1a; }
+      .box-text { font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; text-anchor: middle; fill: #333; }
+      .detail-text { font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; fill: #555; }
+      .small-text { font-family: Arial, sans-serif; font-size: 10px; text-anchor: start; fill: #555; }
+      .decision-text { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; text-anchor: middle; }
+      .flow-text { font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; text-anchor: middle; }
+      .formula-text { font-family: Courier, monospace; font-size: 10px; text-anchor: middle; fill: #444; }
+    </style>
+    
+    <!-- Flèches -->
+    <marker id="arrow" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#333" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#388e3c" />
+    </marker>
+    <marker id="arrowRed" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#d32f2f" />
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="10" refX="12" refY="5" orient="auto">
+      <polygon points="0 0, 12 5, 0 10" fill="#ff9800" />
+    </marker>
+  </defs>
+
+  <!-- Fond blanc -->
+  <rect width="100%" height="100%" fill="white"/>
+  
+  <!-- Titre principal -->
+  <rect x="200" y="20" width="1000" height="45" fill="#f5f5f5" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="700" y="48" class="title-text">Workflow d'Optimisation Prix ACC - Algorithmes Brent/L-BFGS-B</text>
+
+  <!-- COLONNE CENTRALE : FLUX PRINCIPAL -->
+  
+  <!-- 1. INITIALISATION -->
+  <g transform="translate(700, 120)">
+    <rect x="-120" y="-30" width="240" height="60" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+    <text x="0" y="-10" class="box-text" fill="#1976d2">1. INITIALISATION</text>
+    <text x="0" y="5" class="formula-text">prix_min = max(LCOE, VAN=0)</text>
+    <text x="0" y="18" class="formula-text">prix_max = min(EDF×0.95)</text>
+  </g>
+
+  <!-- Flèche vers Brent -->
+  <line x1="700" y1="150" x2="700" y2="190" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 2. BRENT -->
+  <g transform="translate(700, 240)">
+    <polygon points="0,-40 80,0 0,40 -80,0" fill="#fff8e1" stroke="#f57c00" stroke-width="2"/>
+    <text x="0" y="-15" class="decision-text" fill="#f57c00">2. BRENT</text>
+    <text x="0" y="0" class="detail-text">Recherche racine</text>
+    <text x="0" y="13" class="detail-text">f(p) = 0 ?</text>
+  </g>
+
+  <!-- Branche OUI -->
+  <line x1="780" y1="240" x2="900" y2="240" stroke="#388e3c" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="840" y="233" class="flow-text" fill="#388e3c">OUI</text>
+  
+  <g transform="translate(950, 240)">
+    <rect x="-40" y="-15" width="80" height="30" fill="#e8f5e9" stroke="#388e3c" stroke-width="1" rx="3"/>
+    <text x="0" y="5" class="detail-text">Convergé</text>
+  </g>
+
+  <!-- Branche NON vers L-BFGS-B -->
+  <line x1="700" y1="280" x2="700" y2="320" stroke="#d32f2f" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="665" y="303" class="flow-text" fill="#d32f2f">NON</text>
+
+  <!-- 3. L-BFGS-B -->
+  <g transform="translate(700, 370)">
+    <rect x="-120" y="-30" width="240" height="60" fill="#fff3e0" stroke="#ff9800" stroke-width="2" rx="5"/>
+    <text x="0" y="-10" class="box-text" fill="#ff9800">3. L-BFGS-B</text>
+    <text x="0" y="5" class="detail-text">Minimisation (VAN_cible - VAN)²</text>
+    <text x="0" y="18" class="detail-text">150 iterations max</text>
+  </g>
+
+  <!-- Convergence vers validation -->
+  <line x1="950" y1="255" x2="950" y2="480" stroke="#388e3c" stroke-width="2"/>
+  <line x1="700" y1="400" x2="700" y2="480" stroke="#ff9800" stroke-width="2"/>
+  <line x1="700" y1="480" x2="900" y2="480" stroke="#ff9800" stroke-width="2"/>
+  <line x1="900" y1="480" x2="950" y2="530" stroke="#ff9800" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- 4. VALIDATION -->
+  <g transform="translate(950, 530)">
+    <polygon points="0,-45 90,0 0,45 -90,0" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="0" y="-20" class="decision-text" fill="#4caf50">4. VALIDATION</text>
+    <text x="0" y="-5" class="detail-text">TRI ≥ 8%</text>
+    <text x="0" y="8" class="detail-text">Payback ≤ 10ans</text>
+    <text x="0" y="21" class="detail-text">Prix &lt; EDF×0.95</text>
+  </g>
+
+  <!-- OUI vers Monte Carlo -->
+  <line x1="950" y1="575" x2="950" y2="620" stroke="#388e3c" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="1000" y="600" class="flow-text" fill="#388e3c">TOUTES OK</text>
+
+  <!-- 5. MONTE CARLO -->
+  <g transform="translate(950, 670)">
+    <rect x="-100" y="-30" width="200" height="60" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" rx="5"/>
+    <text x="0" y="-10" class="box-text" fill="#9c27b0">5. MONTE CARLO</text>
+    <text x="0" y="5" class="detail-text">1000 simulations</text>
+    <text x="0" y="18" class="detail-text">P(succès) ≥ 90%</text>
+  </g>
+
+  <!-- Résultat final -->
+  <line x1="950" y1="700" x2="950" y2="740" stroke="#9c27b0" stroke-width="3" marker-end="url(#arrow)"/>
+  
+  <g transform="translate(950, 780)">
+    <rect x="-80" y="-20" width="160" height="40" fill="#e1f5fe" stroke="#0277bd" stroke-width="3" rx="5"/>
+    <text x="0" y="5" class="box-text" fill="#0277bd">PRIX OPTIMAL</text>
+  </g>
+
+  <!-- Boucle retour si échec validation -->
+  <path d="M 860 530 Q 500 530 500 300 Q 500 120 580 120" 
+        stroke="#d32f2f" stroke-width="2" fill="none" marker-end="url(#arrowRed)" stroke-dasharray="6,4"/>
+  <text x="750" y="540" class="flow-text" fill="#d32f2f">ÉCHEC</text>
+
+  <!-- PANNEAU GAUCHE : LÉGENDE -->
+  <g transform="translate(50, 150)">
+    <rect x="0" y="0" width="350" height="200" fill="#fafafa" stroke="#666" stroke-width="1" rx="3"/>
+    <text x="175" y="25" class="box-text">LÉGENDE</text>
+    
+    <!-- Initialisation -->
+    <rect x="20" y="45" width="30" height="20" fill="#e3f2fd" stroke="#1976d2"/>
+    <text x="60" y="58" class="small-text">Étape de traitement</text>
+    
+    <!-- Décision -->
+    <polygon points="35,85 50,95 35,105 20,95" fill="#fff8e1" stroke="#f57c00"/>
+    <text x="60" y="98" class="small-text">Point de décision</text>
+    
+    <!-- Validation -->
+    <polygon points="35,125 50,135 35,145 20,135" fill="#e8f5e9" stroke="#4caf50"/>
+    <text x="60" y="138" class="small-text">Validation contraintes</text>
+    
+    <!-- Simulation -->
+    <rect x="20" y="165" width="30" height="20" fill="#f3e5f5" stroke="#9c27b0"/>
+    <text x="60" y="178" class="small-text">Simulation stochastique</text>
+  </g>
+
+  <!-- PANNEAU GAUCHE : PARAMÈTRES -->
+  <g transform="translate(50, 380)">
+    <rect x="0" y="0" width="350" height="250" fill="#fafafa" stroke="#666" stroke-width="1" rx="3"/>
+    <text x="175" y="25" class="box-text">PARAMÈTRES TECHNIQUES</text>
+    
+    <text x="20" y="50" class="small-text" font-weight="bold">Algorithme Brent :</text>
+    <text x="30" y="68" class="small-text">• Convergence garantie si racine existe</text>
+    <text x="30" y="83" class="small-text">• Tolérance : 10⁻⁷ €/kWh</text>
+    <text x="30" y="98" class="small-text">• Robuste aux discontinuités</text>
+    
+    <text x="20" y="123" class="small-text" font-weight="bold">Algorithme L-BFGS-B :</text>
+    <text x="30" y="141" class="small-text">• Optimisation avec bornes</text>
+    <text x="30" y="156" class="small-text">• Quasi-Newton, mémoire limitée</text>
+    <text x="30" y="171" class="small-text">• ftol = 10⁻¹⁰</text>
+    
+    <text x="20" y="196" class="small-text" font-weight="bold">Contraintes validées :</text>
+    <text x="30" y="214" class="small-text">• TRI projet ≥ 8%</text>
+    <text x="30" y="229" class="small-text">• Payback equity ≤ 10 ans</text>
+  </g>
+
+  <!-- PANNEAU DROIT : PERFORMANCE -->
+  <g transform="translate(1100, 380)">
+    <rect x="0" y="0" width="280" height="180" fill="#fafafa" stroke="#666" stroke-width="1" rx="3"/>
+    <text x="140" y="25" class="box-text">PERFORMANCE</text>
+    
+    <text x="20" y="50" class="small-text" font-weight="bold">Temps de calcul :</text>
+    <text x="30" y="68" class="small-text">• Brent : 2-5 sec</text>
+    <text x="30" y="83" class="small-text">• L-BFGS-B : +3-8 sec</text>
+    <text x="30" y="98" class="small-text">• Monte Carlo : +5-10 min</text>
+    
+    <text x="20" y="123" class="small-text" font-weight="bold">Total workflow :</text>
+    <text x="30" y="141" class="small-text">• 15 minutes maximum</text>
+    <text x="30" y="156" class="small-text" fill="#388e3c">• Gain vs Excel : -93%</text>
+  </g>
+
+  <!-- Note sur l'ajustement -->
+  <g transform="translate(450, 280)">
+    <rect x="-60" y="-20" width="120" height="40" fill="#ffebee" stroke="#d32f2f" stroke-width="1" rx="3"/>
+    <text x="0" y="-3" class="detail-text" fill="#d32f2f">Ajuster bornes</text>
+    <text x="0" y="10" class="detail-text" fill="#d32f2f">et réessayer</text>
+  </g>
+
+</svg>
