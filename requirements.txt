@@ -31,6 +31,7 @@ aiohttp>=3.8.0  # Client HTTP asynchrone
 # Génération de documents et exports
 python-docx>=0.8.11
 openpyxl>=3.0.0
+xlsxwriter>=3.0.0
 Pillow>=9.0.0
 
 # Cache et performance
