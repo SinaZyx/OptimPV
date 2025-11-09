@@ -9,6 +9,7 @@ numpy>=1.24.0
 requests>=2.25.0
 
 # Cartographie et visualisation
+plotly>=5.14.0
 pydeck>=0.8.0
 folium>=0.14.0
 streamlit-folium>=0.13.0
@@ -25,6 +26,11 @@ shapely>=1.8.0  # Pour les calculs géométriques
 
 # Nouvelles dépendances pour le simulateur solaire
 aiohttp>=3.8.0  # Client HTTP asynchrone
+
+# Génération de documents et exports
+python-docx>=0.8.11
+openpyxl>=3.0.0
+Pillow>=9.0.0
 
 # Cache et performance
 typing_extensions>=4.0.0
